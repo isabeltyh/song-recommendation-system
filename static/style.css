@@ -208,3 +208,14 @@ button:hover {
     body { padding: 40px 16px; }
     header h1 { font-size: 2.5rem; }
 }
+
+/* Beautiful placeholder for missing album art */
+.placeholder-art {
+    background-color: var(--bg-color); /* Ralph Lauren Navy */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 1px solid var(--border-light);
+}

@@ -76,14 +76,25 @@
             document.getElementById('results-title').className = 'hidden';
         }
 
-        function createSongCard(s) {
+                function createSongCard(s) {
             const div = document.createElement('div');
             div.className = 'song-card';
-            const imgSrc = (s.cover && s.cover.length > 5) ? s.cover : 'https://via.placeholder.com/150?text=No+Art';
+            
+            // Check if cover exists
+            const hasCover = s.cover && s.cover.length > 5;
+            
+            // Build the image or the placeholder
+            let imageHtml = '';
+            if (hasCover) {
+                imageHtml = `<img src="${s.cover}" alt="Album Art" class="album-art" onerror="this.outerHTML='<div class=\\'album-art placeholder-art\\'>🎵</div>'">`;
+            } else {
+                imageHtml = `<div class="album-art placeholder-art">🎵</div>`;
+            }
+
             const scoreHtml = (s.score !== undefined) ? `<div class="score-badge">Score: ${s.score}/100</div>` : '';
             
             div.innerHTML = `
-                <img src="${imgSrc}" alt="Album Art" class="album-art" onerror="this.src='https://via.placeholder.com/150?text=No+Art'">
+                ${imageHtml}
                 <div class="song-info">
                     <h4>${s.title || 'Unknown Title'}</h4>
                     <div class="artist">${s.artist || 'Unknown Artist'}</div>
