@@ -1,7 +1,7 @@
 """
 Command-Line Interface for Song Recommendation System.
 """
-from song_recommender import SongRecommender
+from src.song_recommender import SongRecommender
 
 
 def main():
