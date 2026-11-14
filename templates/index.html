@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Song Recommender</h1>
+            <p>Find songs similar to the one you love</p>
+        </header>
+
+        <div class="card">
+            <label for="song-title">Song Title</label>
+            <input type="text" id="song-title" placeholder="e.g. Shape of You">
+
+            <label for="genre-select">Genre Filter</label>
+            <select id="genre-select">
+                <option value="all">All Genres</option>
+            </select>
+
+            <label for="count-input">Number of Recommendations</label>
+            <input type="text" id="count-input" value="5" placeholder="e.g. 5">
+
+            <button onclick="getRecommendations()">Get Recommendations</button>
+
+            <div id="message" class="hidden"></div>
+            <div id="note" class="hidden"></div>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script>
+        fetch('/api/genres')
+            .then(r => r.json())
+            .then(genres => {
+                const sel = document.getElementById('genre-select');
+                genres.forEach(g => {
+                    const opt = document.createElement('option');
+                    opt.value = g; opt.textContent = g;
+                    sel.appendChild(opt);
+                });
+            });
+
+        function getRecommendations() {
+            const songTitle = document.getElementById('song-title').value.trim();
+            const genre = document.getElementById('genre-select').value;
+            const countRaw = document.getElementById('count-input').value.trim();
+
+            const messageEl = document.getElementById('message');
+            const noteEl = document.getElementById('note');
+            const resultsEl = document.getElementById('results');
+            messageEl.className = 'hidden';
+            noteEl.className = 'hidden';
+            resultsEl.innerHTML = '';
+
+            fetch('/api/recommend', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ song_title: songTitle, genre: genre, count: countRaw })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (!data.success) {
+                    messageEl.className = 'error';
+                    messageEl.textContent = data.error;
+                    return;
+                }
+                if (data.note) {
+                    noteEl.className = 'note';
+                    noteEl.textContent = data.note;
+                }
+                data.results.forEach(s => {
+                    const div = document.createElement('div');
+                    div.className = 'result';
+                    div.innerHTML = `
+                        <h4>${s.title}</h4>
+                        <div class="meta">${s.artist} &middot; ${s.genre}</div>
+                        <div class="score">Score ${s.score} / 100</div>
+                        <div class="why">${s.explanation}</div>
+                    `;
+                    resultsEl.appendChild(div);
+                });
+            });
+        }
+    </script>
+</body>
+</html>
