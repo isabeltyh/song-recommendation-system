@@ -4,7 +4,7 @@ Flask web interface for the Song Recommendation System.
 from flask import Flask, render_template, request, jsonify
 from song_recommender import SongRecommender
 
-app = Flask(__name__, template_folder='../templates')
+app = Flask(__name__, template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'templates'))
 app.secret_key = 'song_recommender_secret'
 
 recommender = SongRecommender()

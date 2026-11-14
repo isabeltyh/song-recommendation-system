@@ -24,8 +24,15 @@ class SongRecommender:
     ARTIST_WEIGHT = 70
     GENRE_WEIGHT = 30
 
-    def __init__(self, data_dir: str = "data"):
-        self.data_dir = data_dir
+    def __init__(self, data_dir: str = None):
+        if data_dir is None:
+            # Get the directory of this file (src/)
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            # Go up one level to the project root, then into 'data'
+            self.data_dir = os.path.join(current_dir, "..", "data")
+        else:
+            self.data_dir = data_dir
+            
         self.songs: List[Dict] = []
         self.load_data()
 
