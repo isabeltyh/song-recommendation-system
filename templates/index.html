@@ -24,7 +24,6 @@
         <div id="recommend-form" class="card hidden">
             <label for="song-title">Find songs similar to...</label>
             <input type="text" id="song-title" placeholder="e.g. Shape of You">
-            <input type="hidden" id="genre-select" value="All Genres">
             <label for="count-input">How many?</label>
             <input type="text" id="count-input" value="10">
             <button onclick="getRecommendations()">Recommend</button>
@@ -45,24 +44,21 @@
     </div>
 
     <script>
-        // Initial load: show random songs
+        // Initial load
         window.onload = () => {
             loadDiscoverFeed();
         };
 
         function switchMode(mode) {
-            // Reset buttons
             document.getElementById('btn-discover-mode').classList.remove('active');
             document.getElementById('btn-recommend-mode').classList.remove('active');
             document.getElementById('btn-search-mode').classList.remove('active');
             document.getElementById('btn-' + mode + '-mode').classList.add('active');
             
-            // Hide all forms
             document.getElementById('recommend-form').classList.add('hidden');
             document.getElementById('search-form').classList.add('hidden');
             clearResults();
 
-            // Show selected form
             if(mode === 'discover') {
                 loadDiscoverFeed();
             } else if(mode === 'recommend') {
@@ -83,14 +79,15 @@
         function createSongCard(s) {
             const div = document.createElement('div');
             div.className = 'song-card';
-            const imgSrc = s.cover ? s.cover : 'https://via.placeholder.com/150?text=No+Art';
+            const imgSrc = (s.cover && s.cover.length > 5) ? s.cover : 'https://via.placeholder.com/150?text=No+Art';
+            const scoreHtml = (s.score !== undefined) ? `<div class="score-badge">Score: ${s.score}/100</div>` : '';
             
             div.innerHTML = `
-                <img src="${imgSrc}" alt="Album Art" class="album-art">
+                <img src="${imgSrc}" alt="Album Art" class="album-art" onerror="this.src='https://via.placeholder.com/150?text=No+Art'">
                 <div class="song-info">
-                    <h4>${s.title}</h4>
-                    <div class="artist">${s.artist}</div>
-                    ${s.score ? `<div class="score-badge">Score: ${s.score}/100</div>` : ''}
+                    <h4>${s.title || 'Unknown Title'}</h4>
+                    <div class="artist">${s.artist || 'Unknown Artist'}</div>
+                    ${scoreHtml}
                 </div>
             `;
             return div;
@@ -105,7 +102,9 @@
                 .then(r => r.json())
                 .then(data => {
                     const resultsEl = document.getElementById('results');
-                    data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
+                    if (data.success && data.results) {
+                        data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
+                    }
                 });
         }
 
