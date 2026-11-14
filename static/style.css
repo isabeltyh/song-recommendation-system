@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600&display=swap');
 
 /* ---------- 1. RESET ---------- */
 * {
@@ -9,74 +9,72 @@
 
 /* ---------- 2. DESIGN TOKENS ---------- */
 :root {
-    --kh-bg: #FCF7E6;
-    --kh-text: #000000;
-    --kh-highlight: #DDE7C2;
-    --kh-button-bg: #000000;
-    --kh-button-text: #FFFFFF;
-    --kh-shadow: rgba(168, 232, 226, 0.3);
-    --kh-border: #EAEAEA;
-    --kh-rounded-card: 12px;
-    --kh-rounded-button: 3.75rem;
-    --kh-rounded-input: 0.75rem;
+    --bg-color: #FFFFFF;       /* Pure white background */
+    --text-main: #041E3A;      /* Ralph Lauren Navy */
+    --text-muted: #666666;
+    --border-color: #041E3A;   /* Navy borders */
+    --border-light: #E5E5E5;
+    --button-bg: #041E3A;      /* Navy button */
+    --button-text: #FFFFFF;    /* White button text */
 }
 
 /* ---------- 3. PAGE BASE ---------- */
 body {
-    font-family: 'Jost', sans-serif;
-    background-color: var(--kh-bg);
-    color: var(--kh-text);
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
     min-height: 100vh;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
-    max-width: 780px;
+    max-width: 680px;
     margin: 0 auto;
 }
 
 /* ---------- 4. HEADER ---------- */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-light);
 }
 
 header h1 {
-    font-size: clamp(1.75rem, 4vw, 2.75rem);
-    font-weight: 600;
-    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 400;
     letter-spacing: 1px;
-    color: var(--kh-text);
-    margin-bottom: 8px;
+    color: var(--text-main);
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 header p {
-    font-size: 1rem;
-    color: #666;
-    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text-muted);
 }
 
-/* ---------- 5. CARD ---------- */
+/* ---------- 5. CARD (Stripped down, no background box) ---------- */
 .card {
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: var(--kh-rounded-card);
-    box-shadow: 0 4px 20px var(--kh-shadow);
-    padding: 40px;
-    transition: box-shadow 0.3s ease;
+    background: transparent;
+    padding: 0;
 }
 
 /* ---------- 6. FORMS ---------- */
 label {
     display: block;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 20px 0 8px;
-    color: var(--kh-text);
+    letter-spacing: 2px;
+    margin: 24px 0 8px;
+    color: var(--text-main);
 }
 
 label:first-of-type {
@@ -85,122 +83,120 @@ label:first-of-type {
 
 input, select {
     width: 100%;
-    padding: 14px 18px;
-    border: none;
-    border-radius: var(--kh-rounded-input);
-    background-color: #F7F4EA;
-    font-family: 'Jost', sans-serif;
+    padding: 16px;
+    border: 1px solid var(--border-light);
+    border-radius: 0; /* Sharp corners */
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    color: var(--kh-text);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-    transition: box-shadow 0.2s ease;
+    color: var(--text-main);
+    transition: border-color 0.3s ease;
 }
 
 input::placeholder {
-    color: #A0A0A0;
+    color: #999;
 }
 
 input:focus, select:focus {
     outline: none;
-    box-shadow: 0 0 0 3px var(--kh-highlight);
+    border-color: var(--border-color);
 }
 
 /* ---------- 7. BUTTON ---------- */
 button {
-    margin-top: 28px;
+    margin-top: 36px;
     width: 100%;
-    padding: 16px;
-    background-color: var(--kh-button-bg);
-    color: var(--kh-button-text);
-    border: none;
-    border-radius: var(--kh-rounded-button);
-    font-family: 'Jost', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+    padding: 18px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-bg);
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #333333;
-    transform: translateY(-2px);
-}
-
-button:active {
-    transform: translateY(0);
+    background-color: transparent;
+    color: var(--button-bg);
 }
 
 /* ---------- 8. MESSAGES ---------- */
 .error {
-    margin-top: 20px;
-    padding: 14px 18px;
-    background-color: #FDECEC;
-    color: #B02A2A;
-    border-left: 3px solid #E11D48;
-    border-radius: 8px;
-    font-size: 0.95rem;
+    margin-top: 24px;
+    padding: 16px;
+    border: 1px solid #E11D48;
+    color: #E11D48;
+    font-size: 0.85rem;
+    text-align: center;
 }
 
 .note {
-    margin-top: 16px;
-    padding: 12px 18px;
-    background-color: #FFF8DE;
+    margin-top: 24px;
+    padding: 16px;
+    border: 1px solid #D4A800;
     color: #8A6D00;
-    border-left: 3px solid #D4A800;
-    border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    text-align: center;
 }
 
 /* ---------- 9. RESULTS ---------- */
 .result {
-    margin-top: 16px;
-    padding: 20px 22px;
-    background-color: #F7F4EA;
-    border-left: 3px solid var(--kh-text);
-    border-radius: var(--kh-rounded-card);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-light);
+    transition: all 0.2s ease;
+}
+
+.result:last-child {
+    border-bottom: none;
 }
 
 .result:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px var(--kh-shadow);
+    padding-left: 10px;
+    border-left: 2px solid var(--border-color);
 }
 
 .result h4 {
-    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin-bottom: 6px;
-    color: var(--kh-text);
+    color: var(--text-main);
 }
 
 .result .meta {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 10px;
-    letter-spacing: 0.3px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
 }
 
 .result .score {
     display: inline-block;
-    font-size: 0.8rem;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 5px 14px;
-    background-color: var(--kh-text);
-    color: var(--kh-bg);
-    border-radius: 9999px;
+    padding: 4px 12px;
+    border: 1px solid var(--text-main);
+    color: var(--text-main);
+    border-radius: 0;
 }
 
 .result .why {
-    margin-top: 10px;
-    font-size: 0.85rem;
-    color: #888;
+    margin-top: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
     font-style: italic;
+    color: var(--text-muted);
 }
 
 .hidden {
@@ -209,7 +205,6 @@ button:active {
 
 /* ---------- 10. RESPONSIVE ---------- */
 @media (max-width: 600px) {
-    body { padding: 20px 12px; }
-    .card { padding: 24px 20px; }
-    header h1 { font-size: 1.5rem; }
+    body { padding: 40px 16px; }
+    header h1 { font-size: 2.5rem; }
 }
