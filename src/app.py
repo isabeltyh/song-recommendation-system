@@ -20,7 +20,9 @@ def index():
 
 @app.route('/api/genres', methods=['GET'])
 def get_genres():
-    return jsonify(recommender.get_all_genres())
+    # Instead of returning 5000 artist names, return just "All" 
+    # (Since your dataset currently uses artist names as genres)
+    return jsonify(["All Genres"])
 
 
 @app.route('/api/recommend', methods=['POST'])
