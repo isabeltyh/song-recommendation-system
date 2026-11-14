@@ -1,6 +1,7 @@
 """
 Flask web interface for the Song Recommendation System.
 """
+import os
 from flask import Flask, render_template, request, jsonify
 from song_recommender import SongRecommender
 
@@ -9,7 +10,7 @@ app.secret_key = 'song_recommender_secret'
 
 recommender = SongRecommender()
 
-
+# ... rest of the code ...
 @app.route('/')
 def index():
     return render_template('index.html')
