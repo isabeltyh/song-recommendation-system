@@ -299998,5 +299998,3527 @@
         "title": "Value.",
         "artist": "John Wong",
         "genre": "Country"
+    },
+    {
+        "id": "s50001",
+        "title": "petal",
+        "artist": "Ariana Grande",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50002",
+        "title": "LÉ TAL",
+        "artist": "Ino Casablanca",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50003",
+        "title": "LÉTAL",
+        "artist": "THÉA",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50004",
+        "title": "petal (angry live version)",
+        "artist": "Ariana Grande",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50005",
+        "title": "METAL",
+        "artist": "Jolagreen23",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50006",
+        "title": "Letal (Takedown)",
+        "artist": "HUNTR/X",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50007",
+        "title": "LETAL",
+        "artist": "Junior H",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50008",
+        "title": "METAL",
+        "artist": "Rounhaa",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50009",
+        "title": "petal (a cappella)",
+        "artist": "Ariana Grande",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50010",
+        "title": "Nothing Else Matters (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50011",
+        "title": "Enter Sandman (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50012",
+        "title": "METALLICA",
+        "artist": "SDM",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50013",
+        "title": "Métal",
+        "artist": "Kerchak",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50014",
+        "title": "Metal & Plastic",
+        "artist": "Eagle Eyed Tiger",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50015",
+        "title": "The Unforgiven (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50016",
+        "title": "M eta L",
+        "artist": "Ibil Bedi",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50017",
+        "title": "MÉTAL",
+        "artist": "KAGE",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50018",
+        "title": "One",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50019",
+        "title": "For Whom The Bell Tolls (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50020",
+        "title": "Fade To Black (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50021",
+        "title": "Metal",
+        "artist": "Gary Numan",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50022",
+        "title": "Metal",
+        "artist": "AFTER",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50023",
+        "title": "petal (instrumental)",
+        "artist": "Ariana Grande",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50024",
+        "title": "Master Of Puppets",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50025",
+        "title": "Sad But True (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50026",
+        "title": "Wherever I May Roam (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50027",
+        "title": "Fuel",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50028",
+        "title": "The Day That Never Comes",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50029",
+        "title": "Melô do Amigo Safado",
+        "artist": "Metal & Cego",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50030",
+        "title": "METAL (feat. Stavo)",
+        "artist": "Mac Tyer",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50031",
+        "title": "Metal",
+        "artist": "Chapeleiro",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50032",
+        "title": "Métal",
+        "artist": "Prime",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50033",
+        "title": "Petal",
+        "artist": "Raveena",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50034",
+        "title": "Seek & Destroy (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50035",
+        "title": "Metal (Remix)",
+        "artist": "Nine Inch Nails",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50036",
+        "title": "The Unforgiven II",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50037",
+        "title": "MÉTAL",
+        "artist": "MAPESS",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50038",
+        "title": "Metalingus",
+        "artist": "Alter Bridge",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50039",
+        "title": "Whiskey In The Jar",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50040",
+        "title": "Metal",
+        "artist": "We Butter The Bread With Butter",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50041",
+        "title": "Metal",
+        "artist": "The Beths",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50042",
+        "title": "Nothing Else Matters (Live)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50043",
+        "title": "Metal",
+        "artist": "Poppy",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50044",
+        "title": "Battery",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50045",
+        "title": "metal",
+        "artist": "food house",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50046",
+        "title": "Metal",
+        "artist": "Daniel May",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50047",
+        "title": "Metal",
+        "artist": "Suuns",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50048",
+        "title": "Tou Topando Tudo",
+        "artist": "Metal & Cego",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50049",
+        "title": "St. Anger",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50050",
+        "title": "Welcome Home (Sanitarium)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50051",
+        "title": "Orion",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50052",
+        "title": "Metal (Live at the Electric Ballroom)",
+        "artist": "Gary Numan",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50053",
+        "title": "Creeping Death (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50054",
+        "title": "METAL",
+        "artist": "Timéa",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50055",
+        "title": "Metal",
+        "artist": "Masayoshi Soken",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50056",
+        "title": "Metal",
+        "artist": "Asia Menor",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50057",
+        "title": "Blackened",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50058",
+        "title": "M.E.T.A.L.",
+        "artist": "J.B.O.",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50059",
+        "title": "Ride The Lightning (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50060",
+        "title": "Metal",
+        "artist": "Tsune",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50061",
+        "title": "Métal",
+        "artist": "LRMS",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50062",
+        "title": "The Memory Remains",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50063",
+        "title": "Metal & Blood",
+        "artist": "Drumsound & Bassline Smith",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50064",
+        "title": "M.E.T.A.L.",
+        "artist": "Freedom Call",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50065",
+        "title": "The Unforgiven III",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50066",
+        "title": "Metal",
+        "artist": "Nouvelle Vague",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50067",
+        "title": "Metal",
+        "artist": "Yosi Horikawa",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50068",
+        "title": "Metal",
+        "artist": "POST20",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50069",
+        "title": "Until It Sleeps (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50070",
+        "title": "Metal",
+        "artist": "fews",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50071",
+        "title": "Metal",
+        "artist": "D-James",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50072",
+        "title": "METAL",
+        "artist": "Wisko",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50073",
+        "title": "Posição da Rã",
+        "artist": "Metal & Cego",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50074",
+        "title": "The Call Of Ktulu (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50075",
+        "title": "Gostou Novinha",
+        "artist": "Metal & Cego",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50076",
+        "title": "Turn The Page",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50077",
+        "title": "The Four Horsemen (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50078",
+        "title": "...And Justice for All",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50079",
+        "title": "Metal",
+        "artist": "Rebuke",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50080",
+        "title": "Métal",
+        "artist": "Harrison Drew",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50081",
+        "title": "Não Seja Besta",
+        "artist": "Metal & Cego",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50082",
+        "title": "Mama Said (Remastered)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50083",
+        "title": "Metal Contra As Nuvens (Ao Vivo Em São Paulo / 1999)",
+        "artist": "Legiao Urbana",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50084",
+        "title": "Metal",
+        "artist": "Under Side 821",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50085",
+        "title": "The Metal",
+        "artist": "Tenacious D",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50086",
+        "title": "Novinha Ta Querendo o Que",
+        "artist": "Metal & Cego",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50087",
+        "title": "Metal (Fall)",
+        "artist": "Motoyuki",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50088",
+        "title": "Metal (Live 79)",
+        "artist": "Gary Numan",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50089",
+        "title": "Hardwired",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50090",
+        "title": "Metal",
+        "artist": "Afrika Bambaataa",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50091",
+        "title": "Metal",
+        "artist": "Witchtrap",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50092",
+        "title": "Don't Tread on Me (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50093",
+        "title": "Metal (feat. Bruant)",
+        "artist": "Janeinafewwords",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50094",
+        "title": "My Friend of Misery (Remastered 2021)",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50095",
+        "title": "Metal & Wood",
+        "artist": "Tyrone Wells",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50096",
+        "title": "We Will Rock You",
+        "artist": "Metal",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50097",
+        "title": "Metal",
+        "artist": "Adrián Berenguer",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50098",
+        "title": "Lux Æterna",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50099",
+        "title": "72 Seasons",
+        "artist": "Metallica",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50100",
+        "title": "Metal",
+        "artist": "NanowaR of Steel",
+        "genre": "Metal"
+    },
+    {
+        "id": "s50101",
+        "title": "Punk",
+        "artist": "Gorillaz",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50102",
+        "title": "Punk",
+        "artist": "Poésie Zéro",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50103",
+        "title": "PUNK",
+        "artist": "Dean Blunt",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50104",
+        "title": "Punk",
+        "artist": "Adam Angst",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50105",
+        "title": "Punk",
+        "artist": "Swift Guad",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50106",
+        "title": "PUNK!",
+        "artist": "BVDLVD",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50107",
+        "title": "Punk",
+        "artist": "Girl Ultra",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50108",
+        "title": "Punk",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50109",
+        "title": "Punkrocker (feat. Iggy Pop) (As featured in Superman)",
+        "artist": "Teddybears",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50110",
+        "title": "Punk (Album Version)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50111",
+        "title": "Punk & Pomerol",
+        "artist": "Lacrimosa",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50112",
+        "title": "Punk",
+        "artist": "Gazzelle",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50113",
+        "title": "Punk",
+        "artist": "LaLion",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50114",
+        "title": "Punk!",
+        "artist": "Pöbel & Gesocks",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50115",
+        "title": "Punk (Demo)",
+        "artist": "Pete Townshend",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50116",
+        "title": "Punk",
+        "artist": "Yelawolf",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50117",
+        "title": "PUNK",
+        "artist": "Tony Effe",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50118",
+        "title": "Punk",
+        "artist": "Chained Saint",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50119",
+        "title": "Punk (Tom Staar Remix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50120",
+        "title": "Be That Change",
+        "artist": "Punk",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50121",
+        "title": "Punk",
+        "artist": "Andy C",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50122",
+        "title": "PUNK",
+        "artist": "Emorfik",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50123",
+        "title": "Punk",
+        "artist": "flo.",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50124",
+        "title": "Pink Pony Club",
+        "artist": "Chappell Roan",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50125",
+        "title": "Punk (DJN)",
+        "artist": "Avishai Cohen",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50126",
+        "title": "Punk",
+        "artist": "Marcel Duchamp",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50127",
+        "title": "PUNK",
+        "artist": "Saitei",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50128",
+        "title": "Punk",
+        "artist": "Etienne de Crécy",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50129",
+        "title": "PUNK",
+        "artist": "Blammaboy Tee",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50130",
+        "title": "Punk",
+        "artist": "Lori Meyers",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50131",
+        "title": "Punk (Reinier Zonneveld Remix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50132",
+        "title": "PUNK",
+        "artist": "CRK2J",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50133",
+        "title": "Punk (Radio Edit)",
+        "artist": "Roddy Lima",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50134",
+        "title": "Punky Reggae Party (12\" Version)",
+        "artist": "Bob Marley & The Wailers",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50135",
+        "title": "PUNK",
+        "artist": "Mac Tyer",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50136",
+        "title": "P.U.N.K.",
+        "artist": "J'aurais voulu",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50137",
+        "title": "Punk (Live)",
+        "artist": "Etienne de Crécy",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50138",
+        "title": "PUNK",
+        "artist": "SAOTOMAMORE",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50139",
+        "title": "Punk (La Vie Antérieure)",
+        "artist": "Deerhunter",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50140",
+        "title": "Punk (ARTY Rock-n-Rolla Extended Mix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50141",
+        "title": "Punk",
+        "artist": "Nico Ripoll",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50142",
+        "title": "PUNK TACTICS",
+        "artist": "Joey Valence & Brae",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50143",
+        "title": "Punk (Prima Di Te)",
+        "artist": "Enrico Ruggeri",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50144",
+        "title": "Punk",
+        "artist": "Josh Johnson",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50145",
+        "title": "Punk",
+        "artist": "Misfire",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50146",
+        "title": "PUNK (feat. Bluu237)",
+        "artist": "Noham",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50147",
+        "title": "Punk",
+        "artist": "Sérane",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50148",
+        "title": "Punk",
+        "artist": "Nammy Wams",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50149",
+        "title": "Punk",
+        "artist": "Los Planetas",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50150",
+        "title": "PUNK ROCKY",
+        "artist": "A$AP Rocky",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50151",
+        "title": "PUNK",
+        "artist": "Fury in Few",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50152",
+        "title": "Punk",
+        "artist": "Paul Colomb",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50153",
+        "title": "Freak Show",
+        "artist": "Punkinloveee",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50154",
+        "title": "Punk & Disorderly",
+        "artist": "Stage Bottles",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50155",
+        "title": "PUNK!",
+        "artist": "Jidoki",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50156",
+        "title": "Punk & Babys",
+        "artist": "Nana Kitade",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50157",
+        "title": "Punk (Mixed) (Tom Staar Remix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50158",
+        "title": "Punk (ARTY Rock-n-Rolla Mix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50159",
+        "title": "PUNK",
+        "artist": "MUST DIE!",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50160",
+        "title": "Punk",
+        "artist": "timbert",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50161",
+        "title": "Punk",
+        "artist": "3 Feet Smaller",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50162",
+        "title": "PUNK",
+        "artist": "Zero 610",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50163",
+        "title": "Punk & Heavy Metal",
+        "artist": "Alex Agnew",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50164",
+        "title": "Punk",
+        "artist": "Dyse",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50165",
+        "title": "Punk Rock Song",
+        "artist": "Bad Religion",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50166",
+        "title": "Punk",
+        "artist": "Sunset Rollercoaster",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50167",
+        "title": "Punk",
+        "artist": "Tous Salopards",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50168",
+        "title": "PUNK !",
+        "artist": "ezcodylee",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50169",
+        "title": "Punk",
+        "artist": "All Bandits",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50170",
+        "title": "Punk",
+        "artist": "Bonka",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50171",
+        "title": "Punk (ABGT622) (Mixed)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50172",
+        "title": "Punk",
+        "artist": "Thomas Newman",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50173",
+        "title": "Punk",
+        "artist": "Impellitteri",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50174",
+        "title": "Punk (Live)",
+        "artist": "Gorillaz",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50175",
+        "title": "Punk",
+        "artist": "El Otro Yo",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50176",
+        "title": "Punk (Cablejuice & DJ Rockid Remix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50177",
+        "title": "Punk",
+        "artist": "Schreng Schreng & La La",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50178",
+        "title": "Punk (feat. Hitman Howie Tee)",
+        "artist": "Chubb Rock",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50179",
+        "title": "I Need You Tonight",
+        "artist": "Punkin Machine",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50180",
+        "title": "Punk (Cosmic Gate Remix)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50181",
+        "title": "Punk!",
+        "artist": "Plastic Duck",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50182",
+        "title": "Punk",
+        "artist": "Gancher & Ruin",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50183",
+        "title": "Punk",
+        "artist": "MrClaps",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50184",
+        "title": "Punk (Ao Vivo)",
+        "artist": "Lixomania",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50185",
+        "title": "Punk",
+        "artist": "Hero Fisher",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50186",
+        "title": "Punk (ASOT 1209)",
+        "artist": "Ferry Corsten",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50187",
+        "title": "PUNK",
+        "artist": "Riff Wood",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50188",
+        "title": "punk",
+        "artist": "Kevin Sparkz",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50189",
+        "title": "Punk & Fier (Remastered 2025)",
+        "artist": "Komptoir Chaos",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50190",
+        "title": "Punk",
+        "artist": "Quarashi",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50191",
+        "title": "PUNK",
+        "artist": "Sonic Dragolgo",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50192",
+        "title": "Punk",
+        "artist": "Mr. Moustache",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50193",
+        "title": "Punk",
+        "artist": "Ewald",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50194",
+        "title": "Punk",
+        "artist": "TWOLOUD",
+        "genre": "Punk"
+    },
+    {
+        "id": "s50195",
+        "title": "Disco",
+        "artist": "Surf Curse",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50196",
+        "title": "D.I.S.C.O. (Version française)",
+        "artist": "Ottawan",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50197",
+        "title": "D.I.S.C.O. (Single Version)",
+        "artist": "Ottawan",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50198",
+        "title": "D.I.S.C.O. (Version française) (Version single)",
+        "artist": "Ottawan",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50199",
+        "title": "DISCO (FT. TOMMY GENESIS)",
+        "artist": "Nessa Barrett",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50200",
+        "title": "D.I.S.C.O.",
+        "artist": "Ottawan",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50201",
+        "title": "D.I.S.C.O",
+        "artist": "The Mega Band",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50202",
+        "title": "DISCO",
+        "artist": "MSS",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50203",
+        "title": "Risco (Ao Vivo)",
+        "artist": "Luis Barbinha",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50204",
+        "title": "No Broke Boys",
+        "artist": "Disco Lines",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50205",
+        "title": "Disco",
+        "artist": "Sextile",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50206",
+        "title": "DISCO",
+        "artist": "SIMONA",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50207",
+        "title": "Risco",
+        "artist": "Jovem Dionisio",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50208",
+        "title": "Disco Voador",
+        "artist": "Hungria",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50209",
+        "title": "Risco (feat. Salomão)",
+        "artist": "Marcela Tais",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50210",
+        "title": "Disco (Radio Edit)",
+        "artist": "Brisa Roché",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50211",
+        "title": "Disco",
+        "artist": "Boris Vian",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50212",
+        "title": "Risco",
+        "artist": "Matheusinho",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50213",
+        "title": "Disco",
+        "artist": "Brisa Roché",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50214",
+        "title": "Disco (I Love It)",
+        "artist": "Ditonellapiaga",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50215",
+        "title": "Disco",
+        "artist": "Turnstile",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50216",
+        "title": "Disco",
+        "artist": "Cooper T",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50217",
+        "title": "Disco",
+        "artist": "Geese",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50218",
+        "title": "Cisco",
+        "artist": "Dmn",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50219",
+        "title": "Disco",
+        "artist": "Dan Korshunov",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50220",
+        "title": "Disco",
+        "artist": "Last Hounds",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50221",
+        "title": "D.I.S.C.O",
+        "artist": "Generation Fête",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50222",
+        "title": "Disco",
+        "artist": "Princess OG",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50223",
+        "title": "Risco (Ao Vivo)",
+        "artist": "Tá Na Mente",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50224",
+        "title": "D.I.S.C.O (115 Bpm)",
+        "artist": "The Gym All-Stars",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50225",
+        "title": "Disco",
+        "artist": "La Bande-Son Imaginaire",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50226",
+        "title": "D.I.S.C.O. (Radio Edit)",
+        "artist": "N-Trance",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50227",
+        "title": "Disco",
+        "artist": "Nedeljko Bajic Baja",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50228",
+        "title": "Disco",
+        "artist": "Jumanov",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50229",
+        "title": "D.I.S.C.O. (Lust For Life)",
+        "artist": "Fancy",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50230",
+        "title": "Disco",
+        "artist": "Benny Sings",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50231",
+        "title": "Disco",
+        "artist": "Mc Stojan",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50232",
+        "title": "Disco",
+        "artist": "Die Toten Hosen",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50233",
+        "title": "Disco",
+        "artist": "Dj Khazik",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50234",
+        "title": "Disco",
+        "artist": "Mente Fuerte",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50235",
+        "title": "D.I.S.C.O.",
+        "artist": "Jackers Revenge",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50236",
+        "title": "Disco",
+        "artist": "The Music",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50237",
+        "title": "Disco",
+        "artist": "Crossfade",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50238",
+        "title": "Disco (Bad dance doesn't matter)",
+        "artist": "chelmico",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50239",
+        "title": "100vies",
+        "artist": "Disco",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50240",
+        "title": "Disco Maghreb",
+        "artist": "DJ Snake",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50241",
+        "title": "Se Eu Me Humilhar (Ao Vivo)",
+        "artist": "Discopraise",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50242",
+        "title": "Disco Yes",
+        "artist": "Tom Misch",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50243",
+        "title": "Disco",
+        "artist": "mitsume",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50244",
+        "title": "Disco",
+        "artist": "Metro Station",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50245",
+        "title": "disco",
+        "artist": "FOLA",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50246",
+        "title": ".D.I.S.C.O.",
+        "artist": "Paul Jockey",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50247",
+        "title": "Disco",
+        "artist": "Sub-Radio",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50248",
+        "title": "Disco (French Version)",
+        "artist": "Gjon's Tears",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50249",
+        "title": "D.I.S.C.O.",
+        "artist": "Collectif Métissé",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50250",
+        "title": "D.I.S.C.O.",
+        "artist": "TWOLOUD",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50251",
+        "title": "Disco Inferno",
+        "artist": "50 Cent",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50252",
+        "title": "Disco Arranhado (Funk Remix)",
+        "artist": "Malu",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50253",
+        "title": "Disco",
+        "artist": "Clarx",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50254",
+        "title": "Disco Cherry",
+        "artist": "Purple Disco Machine",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50255",
+        "title": "Disco",
+        "artist": "Mpharanyana",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50256",
+        "title": "Disco",
+        "artist": "Silmarils",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50257",
+        "title": "Disco",
+        "artist": "Ebony",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50258",
+        "title": "D.I.S.C.O",
+        "artist": "Original disco",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50259",
+        "title": "D.I.S.C.O",
+        "artist": "Disco Brothers",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50260",
+        "title": "Disco",
+        "artist": "Death Valley Girls",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50261",
+        "title": "Disco (Club Mix)",
+        "artist": "Davide Mazzilli",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50262",
+        "title": "Levottomat tuulet",
+        "artist": "DISCO",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50263",
+        "title": "Disco",
+        "artist": "SKIY",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50264",
+        "title": "Discord",
+        "artist": "The Living Tombstone",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50265",
+        "title": "DiSCO",
+        "artist": "KEiiNO",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50266",
+        "title": "Disco",
+        "artist": "Gjon's Tears",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50267",
+        "title": "Disco(teca)",
+        "artist": "Def",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50268",
+        "title": "Disco",
+        "artist": "Widespread Panic",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50269",
+        "title": "Got To Do",
+        "artist": "Disco Lines",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50270",
+        "title": "I Glove Thy Flob (feat. Disco)",
+        "artist": "C418",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50271",
+        "title": "D.I.S.C.O. (Radio Edit)",
+        "artist": "Block & Crown",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50272",
+        "title": "Disco (feat. Mstruff)",
+        "artist": "Ice Prince",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50273",
+        "title": "Ketä sinä odotat",
+        "artist": "DISCO",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50274",
+        "title": "Disco",
+        "artist": "Hank von Hell",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50275",
+        "title": "D.I.S.C.O.",
+        "artist": "Generation Mix",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50276",
+        "title": "Disco 2000",
+        "artist": "Pulp",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50277",
+        "title": "Disco",
+        "artist": "The Bastardz",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50278",
+        "title": "dindin",
+        "artist": "3xdavs",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50279",
+        "title": "DISCO",
+        "artist": "Cookiee Kawaii",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50280",
+        "title": "D.I.S.C.O.",
+        "artist": "80s Mixtape",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50281",
+        "title": "marni",
+        "artist": "Disco",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50282",
+        "title": "jesuisdésolé",
+        "artist": "Disco",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50283",
+        "title": "Ilkeitä asioita",
+        "artist": "DISCO",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50284",
+        "title": "Disco! (Radio)",
+        "artist": "Tomas Tulpe",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50285",
+        "title": "D.I.S.C.O. (Edit)",
+        "artist": "Roman Flügel",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50286",
+        "title": "Disco",
+        "artist": "Powell",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50287",
+        "title": "Disco",
+        "artist": "Slum Village",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50288",
+        "title": "algo aftr copastar",
+        "artist": "Disco",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50289",
+        "title": "DISCO(NNECT)",
+        "artist": "Noa Bar",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50290",
+        "title": "Disco",
+        "artist": "Dori Caymmi",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50291",
+        "title": "Disco",
+        "artist": "Cliff De Zoete",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50292",
+        "title": "Disco",
+        "artist": "The Adicts",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50293",
+        "title": "Kauniimpi ilman sua (feat. Irina)",
+        "artist": "DISCO",
+        "genre": "Disco"
+    },
+    {
+        "id": "s50294",
+        "title": "Volk",
+        "artist": "Tovaritch",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50295",
+        "title": "Folk (Radio Edit)",
+        "artist": "The Bestseller",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50296",
+        "title": "Fotihouse",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50297",
+        "title": "Staffansvisa från Nås",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50298",
+        "title": "Staffan var en stalledräng",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50299",
+        "title": "Jultiggarvisa från Bingsjö",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50300",
+        "title": "Personent hodie",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50301",
+        "title": "Staffanslåt från Leksand - Med blicken västerut",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50302",
+        "title": "Hengekøye (Jazzbombe Sessions)",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50303",
+        "title": "För redeliga män",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50304",
+        "title": "Ut kommer Staffan",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50305",
+        "title": "Yess!",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50306",
+        "title": "Här är anndagjul i år",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50307",
+        "title": "Fruhagen",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50308",
+        "title": "Fot-i-house (Rune Lindbæk Miks)",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50309",
+        "title": "Utadæsjælåpplevelse",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50310",
+        "title": "Folk",
+        "artist": "Lototskiy",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50311",
+        "title": "Bältet",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50312",
+        "title": "Folk",
+        "artist": "Christophe Maroye",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50313",
+        "title": "Här komma de fattiga sjungaremän",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50314",
+        "title": "Folk",
+        "artist": "Aikon",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50315",
+        "title": "Vänner och fränder",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50316",
+        "title": "Próximo Céu",
+        "artist": "Jota C",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50317",
+        "title": "Herr Olof och havsfrun",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50318",
+        "title": "Quiet",
+        "artist": "Folk & Stress",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50319",
+        "title": "Splitter Pine",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50320",
+        "title": "Flickan går på golvet",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50321",
+        "title": "Folk",
+        "artist": "The Sugarplastic",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50322",
+        "title": "Folk",
+        "artist": "Hideyuki Hashimoto",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50323",
+        "title": "Cowboy og Indianer",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50324",
+        "title": "Folk",
+        "artist": "Jérémie Lucchese",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50325",
+        "title": "Äggavisan",
+        "artist": "Folk & Rackare",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50326",
+        "title": "Bris",
+        "artist": "Folk & Røvere",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50327",
+        "title": "Jena Bo Lluc (Mandi Nishtulla x Luluja x Fred Sybardhi)",
+        "artist": "Folk",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50328",
+        "title": "Something in the Water",
+        "artist": "Folk Road Show",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50329",
+        "title": "Folk Rush",
+        "artist": "Anya Nami",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50330",
+        "title": "Folkicc",
+        "artist": "Desingerica",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50331",
+        "title": "My October",
+        "artist": "The Folks",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50332",
+        "title": "Fólk fær andlit",
+        "artist": "Hildur Guðnadóttir",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50333",
+        "title": "Junk Box",
+        "artist": "Folkness",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50334",
+        "title": "Natural One",
+        "artist": "Kids Original Motion Picture Soundtrack",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50335",
+        "title": "Hotel TV",
+        "artist": "Folk Bitch Trio",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50336",
+        "title": "Homer Let The Barts Out",
+        "artist": "folkin",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50337",
+        "title": "Sort Tulipan",
+        "artist": "Folkeklubben",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50338",
+        "title": "FOLKLORE",
+        "artist": "Huitballe",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50339",
+        "title": "Schena Mensch",
+        "artist": "folkshilfe",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50340",
+        "title": "Fedterøv",
+        "artist": "Folkeklubben",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50341",
+        "title": "Schritt für Schritt",
+        "artist": "folkshilfe",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50342",
+        "title": "Tolka",
+        "artist": "Ladaniva",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50343",
+        "title": "God's A Different Sword",
+        "artist": "Folk Bitch Trio",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50344",
+        "title": "Ворую алкоголь",
+        "artist": "ЭВСЭ",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50345",
+        "title": "Weit weg",
+        "artist": "folkshilfe",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50346",
+        "title": "Same Ones Groovin'",
+        "artist": "Folkness",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50347",
+        "title": "Folks Trotte",
+        "artist": "René Aubry",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50348",
+        "title": "Autumn Mountain",
+        "artist": "The Folks",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50349",
+        "title": "Seit a poa Tog",
+        "artist": "folkshilfe",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50350",
+        "title": "Men Ikke Endnu En Vinter",
+        "artist": "Folkeklubben",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50351",
+        "title": "The Folks",
+        "artist": "Simon & Garfunkel",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50352",
+        "title": "Najo eh",
+        "artist": "folkshilfe",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50353",
+        "title": "Le folklore américain (Version stéréo)",
+        "artist": "Sheila",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50354",
+        "title": "The Folks Who Live on the Hill",
+        "artist": "Joshua Redman",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50355",
+        "title": "Пиленце пее (Pilentse pee)",
+        "artist": "Folk Songs Ensemble of the Bulgarian National Radio",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50356",
+        "title": "Folk Forsvinder",
+        "artist": "Chris Burton",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50357",
+        "title": "Danmarksfilm",
+        "artist": "Folkeklubben",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50358",
+        "title": "Folkmusik",
+        "artist": "Peppa Pig Hörspiele",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50359",
+        "title": "Folkvangr",
+        "artist": "Danheim",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50360",
+        "title": "august",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50361",
+        "title": "Blowin' In the Wind",
+        "artist": "Bob Dylan",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50362",
+        "title": "my tears ricochet",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50363",
+        "title": "the 1",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50364",
+        "title": "Too Old to Die Young",
+        "artist": "Brother Dege",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50365",
+        "title": "HAZE (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50366",
+        "title": "HEAVEN (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50367",
+        "title": "QUEEN OF DUST (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50368",
+        "title": "Je t’aimais je t’aime et je t’aimerai",
+        "artist": "Nolwenn Leroy",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50369",
+        "title": "SHE (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50370",
+        "title": "EYES (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50371",
+        "title": "So Far Away From L.A",
+        "artist": "Nolwenn Leroy",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50372",
+        "title": "VIRILE (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50373",
+        "title": "RISE (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50374",
+        "title": "exile",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50375",
+        "title": "TERRITORY (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50376",
+        "title": "Diabolo menthe",
+        "artist": "Nolwenn Leroy",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50377",
+        "title": "cardigan",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50378",
+        "title": "CLASH (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50379",
+        "title": "JUVENILE (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50380",
+        "title": "RUNAWAY (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50381",
+        "title": "illicit affairs",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50382",
+        "title": "this is me trying",
+        "artist": "Taylor Swift",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50383",
+        "title": "DREAMER (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50384",
+        "title": "BREATH (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50385",
+        "title": "SIREN (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50386",
+        "title": "PLACES (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50387",
+        "title": "MADLY (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50388",
+        "title": "BLOOM (Live at The Royal Albert Hall)",
+        "artist": "The Blaze",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50389",
+        "title": "Suzanne",
+        "artist": "Leonard Cohen",
+        "genre": "Folk"
+    },
+    {
+        "id": "s50390",
+        "title": "SOUL",
+        "artist": "Jeune Lion",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50391",
+        "title": "Nobunaga",
+        "artist": "Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50392",
+        "title": "SOUL",
+        "artist": "N-XD",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50393",
+        "title": "Soul",
+        "artist": "Watsebha",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50394",
+        "title": "Soul",
+        "artist": "Yarden",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50395",
+        "title": "Trop",
+        "artist": "Angèle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50396",
+        "title": "Soul",
+        "artist": "Lee Brice",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50397",
+        "title": "Из чёрного мерина",
+        "artist": "RAIKAHO",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50398",
+        "title": "Soul",
+        "artist": "Mari Sarg",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50399",
+        "title": "Soul",
+        "artist": "KhakiKid",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50400",
+        "title": "Soulman",
+        "artist": "Ben L'Oncle Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50401",
+        "title": "Soul",
+        "artist": "Moment in Time",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50402",
+        "title": "Crank That (Soulja Boy)",
+        "artist": "Soulja Boy Tell'em",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50403",
+        "title": "Soul",
+        "artist": "Puggy",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50404",
+        "title": "Soul (R3HAB Remix)",
+        "artist": "Lee Brice",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50405",
+        "title": "soul",
+        "artist": "sentir",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50406",
+        "title": "Runaway Train (2022 Remaster)",
+        "artist": "Soul Asylum",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50407",
+        "title": "Prison dorée",
+        "artist": "Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50408",
+        "title": "SOUL",
+        "artist": "Kordhell",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50409",
+        "title": "Kiss Me Thru The Phone",
+        "artist": "Soulja Boy Tell'em",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50410",
+        "title": "Souls And Stars",
+        "artist": "W. Wallace",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50411",
+        "title": "SOUL",
+        "artist": "ICXN",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50412",
+        "title": "Adios",
+        "artist": "Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50413",
+        "title": "soul",
+        "artist": "Roméo",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50414",
+        "title": "Soul",
+        "artist": "Thomas Jack",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50415",
+        "title": "Soul",
+        "artist": "nobody.one",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50416",
+        "title": "Soul",
+        "artist": "Matchbox Twenty",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50417",
+        "title": "Soul",
+        "artist": "LouisG",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50418",
+        "title": "Soul",
+        "artist": "Melly",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50419",
+        "title": "Soul",
+        "artist": "Rap Box",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50420",
+        "title": "Bad Bitch",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50421",
+        "title": "Soul On Fire",
+        "artist": "Chris Grey",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50422",
+        "title": "Soul",
+        "artist": "The Floacist",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50423",
+        "title": "Soul",
+        "artist": "ROMCO",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50424",
+        "title": "soul",
+        "artist": "Wilee",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50425",
+        "title": "Soul",
+        "artist": "Chetta",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50426",
+        "title": "FU2N",
+        "artist": "Ladi",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50427",
+        "title": "Soul",
+        "artist": "Deep Forest",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50428",
+        "title": "Soul (Japanese Bonus Track)",
+        "artist": "Céline Dion",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50429",
+        "title": "Soulstorm",
+        "artist": "Patrice",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50430",
+        "title": "Soul",
+        "artist": "Menumas",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50431",
+        "title": "Soul",
+        "artist": "VEDO",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50432",
+        "title": "SOUL (SLOWED)",
+        "artist": "Kordhell",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50433",
+        "title": "Soul",
+        "artist": "Xavier Wulf",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50434",
+        "title": "Soul",
+        "artist": "LAUTRE.",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50435",
+        "title": "Soul",
+        "artist": "OSA",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50436",
+        "title": "If This Ain't Love (Don't Know What Is)",
+        "artist": "Nicole Willis",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50437",
+        "title": "S.OU.L.",
+        "artist": "Ace Hood",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50438",
+        "title": "No Love",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50439",
+        "title": "Soul",
+        "artist": "Rival Sons",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50440",
+        "title": "SOUL",
+        "artist": "UdieNnx",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50441",
+        "title": "Soul",
+        "artist": "Mary Mesk",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50442",
+        "title": "Somewhere With You",
+        "artist": "Soul & Sister",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50443",
+        "title": "SOUL",
+        "artist": "DRØNSOND",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50444",
+        "title": "Soul",
+        "artist": "Arka",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50445",
+        "title": "Soul",
+        "artist": "Liniorr",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50446",
+        "title": "Retro 11",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50447",
+        "title": "Another Day",
+        "artist": "Soul & Sister",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50448",
+        "title": "Tambores",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50449",
+        "title": "Fenta",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50450",
+        "title": "Soul (Rouh)",
+        "artist": "Abdulrahman Mohammed",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50451",
+        "title": "Ngifuna Wena (feat. Bongo Beats and Soul)",
+        "artist": "Master KG",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50452",
+        "title": "Write This Down",
+        "artist": "Soulchef",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50453",
+        "title": "Soul",
+        "artist": "Oh The Larceny",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50454",
+        "title": "SOUL (Slowed)",
+        "artist": "UdieNnx",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50455",
+        "title": "Soul Song No. 21",
+        "artist": "Heikki Hallanoro",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50456",
+        "title": "Soul",
+        "artist": "Elisa",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50457",
+        "title": "Soul",
+        "artist": "Engelwood",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50458",
+        "title": "You're Gone",
+        "artist": "Soul & Sister",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50459",
+        "title": "Soul Man",
+        "artist": "Sam & Dave",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50460",
+        "title": "On My Soul",
+        "artist": "Bruno Mars",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50461",
+        "title": "Soul",
+        "artist": "Ney Matogrosso",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50462",
+        "title": "Soul",
+        "artist": "Cortex",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50463",
+        "title": "Soul Steppin",
+        "artist": "Family Company",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50464",
+        "title": "soul",
+        "artist": "deathtoricky",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50465",
+        "title": "Soul",
+        "artist": "Zen & Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50466",
+        "title": "Soul Kitchen",
+        "artist": "The Doors",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50467",
+        "title": "Добрый я",
+        "artist": "Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50468",
+        "title": "Grammy",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50469",
+        "title": "soul",
+        "artist": "Lofi Cassette",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50470",
+        "title": "Burning Spear",
+        "artist": "S.O.U.L.",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50471",
+        "title": "Soul",
+        "artist": "Colors of Sunshine",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50472",
+        "title": "Azules",
+        "artist": "Maikel Delacalle",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50473",
+        "title": "93 'Til Infinity",
+        "artist": "Souls of Mischief",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50474",
+        "title": "SOUL",
+        "artist": "Lestmor",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50475",
+        "title": "Soul & Chemicals",
+        "artist": "Siamese",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50476",
+        "title": "Stand by Me",
+        "artist": "Seal",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50477",
+        "title": "It's All Right",
+        "artist": "Jon Batiste",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50478",
+        "title": "Soul Meets Body",
+        "artist": "Death Cab For Cutie",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50479",
+        "title": "Soul Makossa",
+        "artist": "Bob Sinclar",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50480",
+        "title": "soul in a shell",
+        "artist": "YTHAN",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50481",
+        "title": "Soul Makossa",
+        "artist": "Manu Dibango",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50482",
+        "title": "Soul Meeting",
+        "artist": "Soul Clan",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50483",
+        "title": "I Say a Little Prayer",
+        "artist": "Aretha Franklin",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50484",
+        "title": "Soul Love (2012 Remaster)",
+        "artist": "David Bowie",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50485",
+        "title": "Soul Shadows (Edit)",
+        "artist": "The Crusaders",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50486",
+        "title": "Soul Sista",
+        "artist": "Bilal",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50487",
+        "title": "Back To Life",
+        "artist": "Soul II Soul",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50488",
+        "title": "Soul On Fire",
+        "artist": "Godsmack",
+        "genre": "Soul"
+    },
+    {
+        "id": "s50489",
+        "title": "Funk (The Bloody Beetroots Remix)",
+        "artist": "Etienne de Crécy",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50490",
+        "title": "Funk",
+        "artist": "Etienne de Crécy",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50491",
+        "title": "Funk",
+        "artist": "Changerz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50492",
+        "title": "F.U.N.K.",
+        "artist": "bbno$",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50493",
+        "title": "Dunk",
+        "artist": "Fanny Polly",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50494",
+        "title": "Gunk",
+        "artist": "Overmono",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50495",
+        "title": "Funk (Back Home Remix)",
+        "artist": "Groove Messengers",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50496",
+        "title": "Cunk",
+        "artist": "Jack Stauber",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50497",
+        "title": "FUNK ABNORMAL (SLOWED)",
+        "artist": "DJ V12",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50498",
+        "title": "Funk",
+        "artist": "Martin Garrix",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50499",
+        "title": "Funk (Live)",
+        "artist": "Etienne de Crécy",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50500",
+        "title": "Gunk",
+        "artist": "underscores",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50501",
+        "title": "Funk",
+        "artist": "Meghan Trainor",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50502",
+        "title": "FUNK UNIVERSO",
+        "artist": "Irokz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50503",
+        "title": "Funk You",
+        "artist": "DJ Abdel",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50504",
+        "title": "TRAVOLTACUSTOM (feat. haganedatefuron)",
+        "artist": "KennyDoes",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50505",
+        "title": "Funk",
+        "artist": "C-Dot 416",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50506",
+        "title": "Funk",
+        "artist": "Dex z8",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50507",
+        "title": "Funkytown",
+        "artist": "Lipps Inc.",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50508",
+        "title": "Funkytown (Single Version)",
+        "artist": "Lipps Inc.",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50509",
+        "title": "Funk",
+        "artist": "Cis",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50510",
+        "title": "Funk",
+        "artist": "Capri",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50511",
+        "title": "FUNK MANDALA (SLOWED)",
+        "artist": "DJ Samir",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50512",
+        "title": "FUNK TGIF",
+        "artist": "Young Madz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50513",
+        "title": "Pike's Nights",
+        "artist": "Schwarz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50514",
+        "title": "Funk",
+        "artist": "ПРОКЛЯТИЙ ***",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50515",
+        "title": "Funk",
+        "artist": "Pav Dharia",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50516",
+        "title": "funk",
+        "artist": "Bumloco",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50517",
+        "title": "MATUSHKA ULTRAFUNK",
+        "artist": "satirin",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50518",
+        "title": "Funkinox",
+        "artist": "Inoxtag",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50519",
+        "title": "Funk",
+        "artist": "Richie Rich",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50520",
+        "title": "Funk",
+        "artist": "Lioness",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50521",
+        "title": "FUNK TAKA (SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50522",
+        "title": "FUNK CRIMINAL (SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50523",
+        "title": "FUNK SIGILO (SLOWED)",
+        "artist": "h6itam",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50524",
+        "title": "Maggot Brain",
+        "artist": "Funkadelic",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50525",
+        "title": "F.U.N.K.",
+        "artist": "Betty Davis",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50526",
+        "title": "FUNK!",
+        "artist": "Morgan Starner",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50527",
+        "title": "F.U.N.K.",
+        "artist": "Flo Mega",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50528",
+        "title": "Funk (I Got This)",
+        "artist": "!!!",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50529",
+        "title": "Funk",
+        "artist": "Colyn",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50530",
+        "title": "FUNK DO BOUNCE (Slowed)",
+        "artist": "ARIIS",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50531",
+        "title": "Funk",
+        "artist": "Kosma Król",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50532",
+        "title": "FUNK POWER (Ultra Slowed)",
+        "artist": "Yatashi",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50533",
+        "title": "Azul",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50534",
+        "title": "Funk",
+        "artist": "Dezzy Hollow",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50535",
+        "title": "Funk (Club Edit)",
+        "artist": "InClose",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50536",
+        "title": "FUNK UNIVERSO (Super Slowed)",
+        "artist": "Irokz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50537",
+        "title": "Funk",
+        "artist": "Leon Tikas",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50538",
+        "title": "FUNK ABNORMAL (ULTRA SLOWED)",
+        "artist": "DJ V12",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50539",
+        "title": "MATUSHKA ULTRAFUNK (Slowed)",
+        "artist": "satirin",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50540",
+        "title": "FUNK CRIMINAL (SUPER SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50541",
+        "title": "Funk",
+        "artist": "Manuel Kane",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50542",
+        "title": "Funk",
+        "artist": "kamaumeetsworld",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50543",
+        "title": "Funk",
+        "artist": "Ahzee",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50544",
+        "title": "FUNK INFERNAL (SLOWED)",
+        "artist": "DYGO",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50545",
+        "title": "I Love It",
+        "artist": "Funky District",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50546",
+        "title": "Funk do Pão de Queijo (Remastered)",
+        "artist": "Bolofofos",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50547",
+        "title": "VILLAGE FUNK!",
+        "artist": "bear bear & friends",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50548",
+        "title": "I Got It For You",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50549",
+        "title": "FUNK ABNORMAL (SUPER SLOWED)",
+        "artist": "DJ V12",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50550",
+        "title": "Under the Moon",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50551",
+        "title": "Funk Da Montanha (Slowed)",
+        "artist": "chipbagov",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50552",
+        "title": "FUNK SERENO (SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50553",
+        "title": "FUNK MADA (SUPER SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50554",
+        "title": "FUNK INFERNAL",
+        "artist": "DYGO",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50555",
+        "title": "DR34M$",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50556",
+        "title": "FUNK ESTRANHO (SUPER SLOWED)",
+        "artist": "Astora",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50557",
+        "title": "FUNK MONOCLE (Super Slowed)",
+        "artist": "Raiden",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50558",
+        "title": "Hold On",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50559",
+        "title": "FUNK DO BOUNCE",
+        "artist": "ARIIS",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50560",
+        "title": "Funk Destravado (Ultra Slowed)",
+        "artist": "SEKIRX",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50561",
+        "title": "VOIS SUR TON CHEMIN PR FUNK!",
+        "artist": "Xlout",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50562",
+        "title": "FUNK SERENO (SUPER SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50563",
+        "title": "FUNK MONOCLE (Ultra Slowed)",
+        "artist": "Raiden",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50564",
+        "title": "Funk Destravado (Slowed)",
+        "artist": "SEKIRX",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50565",
+        "title": "FUNK DO BOUNCE (Super Slowed)",
+        "artist": "ARIIS",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50566",
+        "title": "FUNK DO BALKAN - Ultra Slowed",
+        "artist": "$werve",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50567",
+        "title": "DARK AGE FUNK",
+        "artist": "Funky Soulster",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50568",
+        "title": "where are you taking me? (mente)",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50569",
+        "title": "FUNK MONOCLE",
+        "artist": "Raiden",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50570",
+        "title": "FUNK INFERNAL (ULTRA SLOWED)",
+        "artist": "DYGO",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50571",
+        "title": "Funk de Beleza (Slowed)",
+        "artist": "Nateki",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50572",
+        "title": "Keep Up",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50573",
+        "title": "this is the moment (cuerpo)",
+        "artist": "Funk Tribu",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50574",
+        "title": "Funk Drunk",
+        "artist": "Felix Da Housecat",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50575",
+        "title": "FUNK INFERNAL (SUPER SLOWED)",
+        "artist": "DYGO",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50576",
+        "title": "Forbidden Voices",
+        "artist": "Odymel",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50577",
+        "title": "FUNK CRIMINAL (MEGA SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50578",
+        "title": "FUNK UNIVERSO (Sped Up)",
+        "artist": "Irokz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50579",
+        "title": "FUNK ESTRELAS",
+        "artist": "Irokz",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50580",
+        "title": "FUNK CRIMINAL (ULTRA SLOWED)",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50581",
+        "title": "The Funk",
+        "artist": "Satirized",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50582",
+        "title": "The Funk",
+        "artist": "VERTIC",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50583",
+        "title": "Funk Secreto (Ultra Slowed)",
+        "artist": "h6itam",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50584",
+        "title": "FUNK BAD DO BAD (SLOWED)",
+        "artist": "DJ VTTT77",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50585",
+        "title": "FUNK MANDALA",
+        "artist": "DJ Samir",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50586",
+        "title": "Funk Rave",
+        "artist": "Anitta",
+        "genre": "Funk"
+    },
+    {
+        "id": "s50587",
+        "title": "FUNK TAKA",
+        "artist": "ICEDMANE",
+        "genre": "Funk"
     }
 ]
