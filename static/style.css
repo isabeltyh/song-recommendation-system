@@ -9,13 +9,13 @@
 
 /* ---------- 2. DESIGN TOKENS ---------- */
 :root {
-    --bg-color: #FFFFFF;       /* Pure white background */
+    --bg-color: #FFFFFF;
     --text-main: #041E3A;      /* Ralph Lauren Navy */
     --text-muted: #666666;
-    --border-color: #041E3A;   /* Navy borders */
+    --border-color: #041E3A;
     --border-light: #E5E5E5;
-    --button-bg: #041E3A;      /* Navy button */
-    --button-text: #FFFFFF;    /* White button text */
+    --button-bg: #041E3A;
+    --button-text: #FFFFFF;
 }
 
 /* ---------- 3. PAGE BASE ---------- */
@@ -24,76 +24,90 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
     min-height: 100vh;
-    padding: 60px 20px;
     -webkit-font-smoothing: antialiased;
 }
 
-.container {
-    max-width: 680px;
-    margin: 0 auto;
-}
-
-/* ---------- 4. HEADER ---------- */
-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
+/* ---------- 4. TOP NAVIGATION BAR ---------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
     border-bottom: 1px solid var(--border-light);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-header h1 {
+.nav-brand {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: var(--text-main);
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-header p {
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: var(--text-muted);
-}
-
-/* ---------- 5. MODE SWITCHER ---------- */
-.mode-switcher {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    justify-content: center;
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 20px;
-}
-
-.mode-switcher button {
-    margin-top: 0;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
     width: auto;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: var(--text-main);
-    border: 1px solid var(--border-light);
+    margin: 0;
 }
 
-.mode-switcher button.active {
-    background-color: var(--text-main);
-    color: #fff;
-    border-color: var(--text-main);
-}
-
-.mode-switcher button:hover {
-    background-color: var(--border-light);
+.nav-btn:hover {
     color: var(--text-main);
 }
 
-/* ---------- 6. FORMS ---------- */
+.nav-btn.active {
+    color: var(--text-main);
+    border-bottom: 2px solid var(--text-main);
+}
+
+/* ---------- 5. MAIN CONTAINER ---------- */
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* ---------- 6. FORMS & CARDS ---------- */
 .card {
     background: transparent;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+
+.card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
 }
 
 label {
@@ -103,19 +117,16 @@ label {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 24px 0 8px;
+    margin: 20px 0 8px;
     color: var(--text-main);
-}
-
-label:first-of-type {
-    margin-top: 0;
+    text-align: left;
 }
 
 input, select {
     width: 100%;
     padding: 16px;
     border: 1px solid var(--border-light);
-    border-radius: 0; /* Sharp corners */
+    border-radius: 0;
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
@@ -133,8 +144,9 @@ input:focus, select:focus {
 }
 
 /* ---------- 7. BUTTON ---------- */
-button {
-    margin-top: 36px;
+button[onclick^="getRecommendations"], 
+button[onclick^="searchByArtist"] {
+    margin-top: 30px;
     width: 100%;
     padding: 18px;
     background-color: var(--button-bg);
@@ -150,7 +162,8 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+button[onclick^="getRecommendations"]:hover, 
+button[onclick^="searchByArtist"]:hover {
     background-color: transparent;
     color: var(--button-bg);
 }
@@ -165,24 +178,22 @@ button:hover {
     text-align: center;
 }
 
-.note {
-    margin-top: 24px;
-    padding: 16px;
-    border: 1px solid #D4A800;
-    color: #8A6D00;
-    font-size: 0.85rem;
+/* ---------- 9. RESULTS LIST ---------- */
+#results-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
     text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 10px;
+    animation: fadeIn 0.4s ease;
 }
 
-/* ---------- 9. TEXT-ONLY SONG LIST ---------- */
 #results {
     display: flex;
     flex-direction: column;
-    gap: 0; /* Using borders instead of gaps for a cleaner list */
-    margin-top: 20px;
-    max-height: 600px; 
-    overflow-y: auto;
-    padding-right: 10px;
+    animation: fadeIn 0.4s ease;
 }
 
 .song-card {
@@ -236,29 +247,36 @@ button:hover {
     border-radius: 0;
 }
 
-/* Scrollbar styling */
-#results::-webkit-scrollbar {
-    width: 8px;
-}
-#results::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-#results::-webkit-scrollbar-thumb {
-    background: var(--border-light);
-    border-radius: 4px;
-}
-#results::-webkit-scrollbar-thumb:hover {
-    background: var(--text-main);
-}
-
 .hidden {
     display: none;
 }
 
-/* ---------- 10. RESPONSIVE ---------- */
-@media (max-width: 600px) {
-    body { padding: 40px 16px; }
-    header h1 { font-size: 2.5rem; }
-    .mode-switcher { flex-direction: column; }
-    .mode-switcher button { width: 100%; }
+/* ---------- 10. ANIMATIONS ---------- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- 11. RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .nav-btn {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+    .container {
+        margin: 40px auto;
+    }
+    .card h2 {
+        font-size: 2rem;
+    }
 }

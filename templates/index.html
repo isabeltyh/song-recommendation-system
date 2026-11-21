@@ -7,40 +7,47 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Song Recommender</h1>
-            <p>Discover your next favorite track</p>
-        </header>
 
-        <!-- Mode Switcher -->
-        <div class="mode-switcher">
-            <button id="btn-discover-mode" class="active" onclick="switchMode('discover')">Discover</button>
-            <button id="btn-recommend-mode" onclick="switchMode('recommend')">Get Similar Songs</button>
-            <button id="btn-search-mode" onclick="switchMode('search')">Search Artists</button>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">Song Recommender</div>
+        <div class="nav-links">
+            <button id="btn-discover-mode" class="nav-btn active" onclick="switchMode('discover')">Discover</button>
+            <button id="btn-recommend-mode" class="nav-btn" onclick="switchMode('recommend')">Get Similar Songs</button>
+            <button id="btn-search-mode" class="nav-btn" onclick="switchMode('search')">Search Artists</button>
         </div>
+    </nav>
 
+    <!-- Main Content -->
+    <div class="container">
+        
         <!-- Recommendation Form -->
         <div id="recommend-form" class="card hidden">
-            <label for="song-title">Find songs similar to...</label>
+            <h2>Find Similar Songs</h2>
+            <p>Enter a song you love, and we'll find tracks that match its vibe.</p>
+            <label for="song-title">Song Title</label>
             <input type="text" id="song-title" placeholder="e.g. Shape of You">
-            <label for="count-input">How many?</label>
+            <label for="count-input">How many results?</label>
             <input type="text" id="count-input" value="10">
             <button onclick="getRecommendations()">Recommend</button>
         </div>
 
         <!-- Search Form -->
         <div id="search-form" class="card hidden">
-            <label for="artist-search">Search by Artist</label>
+            <h2>Search by Artist</h2>
+            <p>Find all songs by a specific artist in our database.</p>
+            <label for="artist-search">Artist Name</label>
             <input type="text" id="artist-search" placeholder="e.g. Taylor Swift" onkeypress="if(event.key === 'Enter') searchByArtist()">
             <button onclick="searchByArtist()">Search</button>
         </div>
 
         <div id="message" class="hidden"></div>
 
-        <!-- Results Container -->
-        <h3 id="results-title" class="hidden" style="margin-top: 40px;">Discover New Music</h3>
-        <div id="results"></div>
+        <!-- Results Area -->
+        <div id="results-container">
+            <h3 id="results-title" class="hidden">Discover New Music</h3>
+            <div id="results"></div>
+        </div>
     </div>
 
     <script>
@@ -50,23 +57,22 @@
         };
 
         function switchMode(mode) {
-            document.getElementById('btn-discover-mode').classList.remove('active');
-            document.getElementById('btn-recommend-mode').classList.remove('active');
-            document.getElementById('btn-search-mode').classList.remove('active');
+            // Reset all nav buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
             document.getElementById('btn-' + mode + '-mode').classList.add('active');
             
+            // Hide all forms and clear results
             document.getElementById('recommend-form').classList.add('hidden');
             document.getElementById('search-form').classList.add('hidden');
             clearResults();
 
+            // Show selected mode
             if(mode === 'discover') {
                 loadDiscoverFeed();
             } else if(mode === 'recommend') {
                 document.getElementById('recommend-form').classList.remove('hidden');
-                document.getElementById('results-title').textContent = "Similar Songs";
             } else if(mode === 'search') {
                 document.getElementById('search-form').classList.remove('hidden');
-                document.getElementById('results-title').textContent = "Artist Search";
             }
         }
 
@@ -76,7 +82,7 @@
             document.getElementById('results-title').className = 'hidden';
         }
 
-                        function createSongCard(s) {
+        function createSongCard(s) {
             const div = document.createElement('div');
             div.className = 'song-card';
             
@@ -133,6 +139,7 @@
                     return;
                 }
                 
+                document.getElementById('results-title').textContent = "Similar Songs";
                 document.getElementById('results-title').classList.remove('hidden');
                 const resultsEl = document.getElementById('results');
                 data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
@@ -152,7 +159,7 @@
                     const resultsEl = document.getElementById('results');
                     
                     if (data.results.length === 0) {
-                        resultsEl.innerHTML = '<p style="color:#666;">No songs found for this artist.</p>';
+                        resultsEl.innerHTML = '<p style="color:#666; text-align:center; margin-top:20px;">No songs found for this artist.</p>';
                         return;
                     }
                     data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
