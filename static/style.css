@@ -280,3 +280,17 @@ button[onclick^="searchByArtist"]:hover {
         font-size: 2rem;
     }
 }
+
+/* Like Button */
+.like-btn {
+    transition: all 0.2s ease;
+}
+.like-btn:hover {
+    border-color: var(--text-main) !important;
+}
+
+/* Profile specific adjustments */
+#profile-form h3 {
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 10px;
+}

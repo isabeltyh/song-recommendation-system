@@ -10,21 +10,38 @@
 
     <!-- Top Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-brand">Song Recommender</div>
+        <div class="nav-brand" onclick="switchMode('discover')" style="cursor:pointer;">Song Recommender</div>
         <div class="nav-links">
             <button id="btn-discover-mode" class="nav-btn active" onclick="switchMode('discover')">Discover</button>
-            <button id="btn-recommend-mode" class="nav-btn" onclick="switchMode('recommend')">Get Similar Songs</button>
-            <button id="btn-search-mode" class="nav-btn" onclick="switchMode('search')">Search Artists</button>
+            <button id="btn-recommend-mode" class="nav-btn" onclick="switchMode('recommend')">Similar</button>
+            <button id="btn-search-mode" class="nav-btn" onclick="switchMode('search')">Search</button>
+            <button id="btn-profile-mode" class="nav-btn" onclick="switchMode('profile')">Profile</button>
         </div>
     </nav>
 
     <!-- Main Content -->
     <div class="container">
         
+        <!-- Auth Form (Login / Signup) -->
+        <div id="auth-form" class="card hidden">
+            <h2 id="auth-title">Welcome Back</h2>
+            <p id="auth-subtitle">Log in to save your favorite songs.</p>
+            
+            <label for="auth-username">Username</label>
+            <input type="text" id="auth-username" placeholder="Enter username">
+            
+            <label for="auth-password">Password</label>
+            <input type="password" id="auth-password" placeholder="Enter password">
+            
+            <button onclick="handleAuth()" id="auth-submit-btn">Log In</button>
+            <p style="margin-top: 15px; font-size: 0.8rem; cursor: pointer; text-decoration: underline;" onclick="toggleAuthMode()">
+                <span id="auth-toggle-text">Need an account? Sign Up</span>
+            </p>
+        </div>
+
         <!-- Recommendation Form -->
         <div id="recommend-form" class="card hidden">
             <h2>Find Similar Songs</h2>
-            <p>Enter a song you love, and we'll find tracks that match its vibe.</p>
             <label for="song-title">Song Title</label>
             <input type="text" id="song-title" placeholder="e.g. Shape of You">
             <label for="count-input">How many results?</label>
@@ -34,136 +51,219 @@
 
         <!-- Search Form -->
         <div id="search-form" class="card hidden">
-            <h2>Search by Artist</h2>
-            <p>Find all songs by a specific artist in our database.</p>
-            <label for="artist-search">Artist Name</label>
-            <input type="text" id="artist-search" placeholder="e.g. Taylor Swift" onkeypress="if(event.key === 'Enter') searchByArtist()">
-            <button onclick="searchByArtist()">Search</button>
+            <h2>Search</h2>
+            <label for="search-type">Search By</label>
+            <select id="search-type" onchange="toggleSearchType()">
+                <option value="artist">Artist</option>
+                <option value="album">Album</option>
+            </select>
+            
+            <label for="search-query" id="search-label">Artist Name</label>
+            <input type="text" id="search-query" placeholder="e.g. Taylor Swift" onkeypress="if(event.key === 'Enter') executeSearch()">
+            
+            <button onclick="executeSearch()">Search</button>
         </div>
 
-        <div id="message" class="hidden"></div>
-
-        <!-- Results Area -->
-        <div id="results-container">
-            <h3 id="results-title" class="hidden">Discover New Music</h3>
+        <!-- Profile Page -->
+        <div id="profile-form" class="card hidden">
+            <h2>Your Profile</h2>
+            <p id="profile-greeting">Welcome!</p>
+            <button onclick="logoutUser()" style="background:transparent; color:var(--text-main); border:1px solid var(--text-main);">Log Out</button>
+            
+            <h3 id="results-title" class="hidden" style="margin-top:40px;">Your Liked Songs</h3>
             <div id="results"></div>
         </div>
+
+        <!-- Main Results Area (Used by Discover, Similar, Search) -->
+        <div id="main-results-container">
+            <h3 id="main-results-title" class="hidden">Discover New Music</h3>
+            <div id="main-results"></div>
+        </div>
+
     </div>
 
     <script>
-        // Initial load
+        let isSignupMode = false;
+        let currentUser = null;
+
         window.onload = () => {
+            checkAuth();
             loadDiscoverFeed();
         };
 
-        function switchMode(mode) {
-            // Reset all nav buttons
-            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
-            document.getElementById('btn-' + mode + '-mode').classList.add('active');
-            
-            // Hide all forms and clear results
-            document.getElementById('recommend-form').classList.add('hidden');
-            document.getElementById('search-form').classList.add('hidden');
-            clearResults();
+        // --- AUTHENTICATION ---
+        function checkAuth() {
+            fetch('/api/check_auth').then(r => r.json()).then(data => {
+                if (data.logged_in) {
+                    currentUser = data.username;
+                }
+            });
+        }
 
-            // Show selected mode
-            if(mode === 'discover') {
+        function toggleAuthMode() {
+            isSignupMode = !isSignupMode;
+            document.getElementById('auth-title').textContent = isSignupMode ? "Create Account" : "Welcome Back";
+            document.getElementById('auth-submit-btn').textContent = isSignupMode ? "Sign Up" : "Log In";
+            document.getElementById('auth-toggle-text').textContent = isSignupMode ? "Already have an account? Log In" : "Need an account? Sign Up";
+        }
+
+        function handleAuth() {
+            const u = document.getElementById('auth-username').value.trim();
+            const p = document.getElementById('auth-password').value.trim();
+            const url = isSignupMode ? '/api/signup' : '/api/login';
+            
+            fetch(url, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({username: u, password: p})
+            }).then(r => r.json()).then(data => {
+                if(data.success) {
+                    if(isSignupMode) {
+                        alert("Account created! Please log in.");
+                        toggleAuthMode();
+                    } else {
+                        currentUser = data.username;
+                        switchMode('profile');
+                        loadLikes();
+                    }
+                } else {
+                    alert(data.error);
+                }
+            });
+        }
+
+        function logoutUser() {
+            fetch('/api/logout', {method: 'POST'}).then(() => {
+                currentUser = null;
+                switchMode('discover');
+            });
+        }
+
+        // --- NAVIGATION & UI ---
+        function switchMode(mode) {
+            // Hide all forms and results
+            document.querySelectorAll('.card').forEach(c => c.classList.add('hidden'));
+            document.getElementById('main-results-container').classList.add('hidden');
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            
+            document.getElementById('btn-' + mode + '-mode').classList.add('active');
+
+            if (mode === 'discover') {
+                document.getElementById('main-results-container').classList.remove('hidden');
                 loadDiscoverFeed();
-            } else if(mode === 'recommend') {
+            } else if (mode === 'recommend') {
                 document.getElementById('recommend-form').classList.remove('hidden');
-            } else if(mode === 'search') {
+            } else if (mode === 'search') {
                 document.getElementById('search-form').classList.remove('hidden');
+            } else if (mode === 'profile') {
+                if (!currentUser) {
+                    document.getElementById('auth-form').classList.remove('hidden');
+                } else {
+                    document.getElementById('profile-form').classList.remove('hidden');
+                    document.getElementById('profile-greeting').textContent = "Logged in as " + currentUser;
+                    loadLikes();
+                }
             }
         }
 
-        function clearResults() {
-            document.getElementById('message').className = 'hidden';
-            document.getElementById('results').innerHTML = '';
-            document.getElementById('results-title').className = 'hidden';
+        function toggleSearchType() {
+            const type = document.getElementById('search-type').value;
+            document.getElementById('search-label').textContent = type === 'artist' ? 'Artist Name' : 'Album Name';
         }
 
-        function createSongCard(s) {
+        // --- SONG CARDS ---
+        function createSongCard(s, showLikeBtn = true) {
             const div = document.createElement('div');
             div.className = 'song-card';
             
-            const scoreHtml = (s.score !== undefined) ? `<div class="score-badge">Score: ${s.score}/100</div>` : '';
-            
+            const likeBtnHtml = showLikeBtn ? `
+                <button class="like-btn" onclick="toggleLike('${s.title.replace(/'/g, "\\'")}', '${s.artist.replace(/'/g, "\\'")}', this)" style="width:auto; margin:0; padding:8px 12px; font-size:0.7rem; background:transparent; color:var(--text-main); border:1px solid var(--border-light);">♡ Like</button>
+            ` : '';
+
             div.innerHTML = `
                 <div class="song-info">
-                    <h4>${s.title || 'Unknown Title'}</h4>
-                    <div class="artist">${s.artist || 'Unknown Artist'}</div>
-                    ${scoreHtml}
+                    <h4>${s.title || 'Unknown'}</h4>
+                    <div class="artist">${s.artist || 'Unknown'}</div>
                 </div>
+                ${likeBtnHtml}
             `;
             return div;
         }
 
+        // --- FETCHING DATA ---
         function loadDiscoverFeed() {
-            clearResults();
-            document.getElementById('results-title').textContent = "Discover New Music";
-            document.getElementById('results-title').classList.remove('hidden');
-            
-            fetch('/api/discover')
-                .then(r => r.json())
-                .then(data => {
-                    const resultsEl = document.getElementById('results');
-                    if (data.success && data.results) {
-                        data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
-                    }
-                });
-        }
-
-        function getRecommendations() {
-            clearResults();
-            const songTitle = document.getElementById('song-title').value.trim();
-            const countRaw = document.getElementById('count-input').value.trim();
-
-            if(!songTitle) {
-                const msg = document.getElementById('message');
-                msg.className = 'error';
-                msg.textContent = "Please enter a song title.";
-                return;
-            }
-
-            fetch('/api/recommend', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ song_title: songTitle, genre: "all", count: countRaw })
-            })
-            .then(r => r.json())
-            .then(data => {
-                if (!data.success) {
-                    const msg = document.getElementById('message');
-                    msg.className = 'error';
-                    msg.textContent = data.error;
-                    return;
-                }
-                
-                document.getElementById('results-title').textContent = "Similar Songs";
-                document.getElementById('results-title').classList.remove('hidden');
-                const resultsEl = document.getElementById('results');
-                data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
+            fetch('/api/discover').then(r => r.json()).then(data => {
+                const el = document.getElementById('main-results');
+                el.innerHTML = '';
+                document.getElementById('main-results-title').textContent = "Discover New Music";
+                document.getElementById('main-results-title').classList.remove('hidden');
+                data.results.forEach(s => el.appendChild(createSongCard(s)));
             });
         }
 
-        function searchByArtist() {
-            clearResults();
-            const artist = document.getElementById('artist-search').value.trim();
-            if(!artist) return;
+        function getRecommendations() {
+            const title = document.getElementById('song-title').value.trim();
+            const count = document.getElementById('count-input').value.trim();
+            
+            fetch('/api/recommend', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({song_title: title, count: count})
+            }).then(r => r.json()).then(data => {
+                if(!data.success) return alert(data.error);
+                const el = document.getElementById('main-results');
+                el.innerHTML = '';
+                document.getElementById('main-results-title').textContent = "Similar to " + title;
+                document.getElementById('main-results-title').classList.remove('hidden');
+                data.results.forEach(s => el.appendChild(createSongCard(s)));
+            });
+        }
 
-            fetch('/api/search_artist?artist=' + encodeURIComponent(artist))
-                .then(r => r.json())
-                .then(data => {
-                    document.getElementById('results-title').textContent = "Songs by " + artist;
-                    document.getElementById('results-title').classList.remove('hidden');
-                    const resultsEl = document.getElementById('results');
-                    
-                    if (data.results.length === 0) {
-                        resultsEl.innerHTML = '<p style="color:#666; text-align:center; margin-top:20px;">No songs found for this artist.</p>';
-                        return;
-                    }
-                    data.results.forEach(s => resultsEl.appendChild(createSongCard(s)));
-                });
+        function executeSearch() {
+            const type = document.getElementById('search-type').value;
+            const query = document.getElementById('search-query').value.trim();
+            const endpoint = type === 'artist' ? '/api/search_artist?artist=' : '/api/search_album?album=';
+            
+            fetch(endpoint + encodeURIComponent(query)).then(r => r.json()).then(data => {
+                const el = document.getElementById('main-results');
+                el.innerHTML = '';
+                document.getElementById('main-results-title').textContent = `Songs matching "${query}"`;
+                document.getElementById('main-results-title').classList.remove('hidden');
+                if(data.results.length === 0) el.innerHTML = '<p style="text-align:center; color:#666; margin-top:20px;">No results found.</p>';
+                data.results.forEach(s => el.appendChild(createSongCard(s)));
+            });
+        }
+
+        // --- LIKES ---
+        function toggleLike(title, artist, btn) {
+            if (!currentUser) {
+                alert("Please log in to like songs.");
+                switchMode('profile');
+                return;
+            }
+
+            fetch('/api/like', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({title: title, artist: artist})
+            }).then(r => r.json()).then(data => {
+                if(data.success) {
+                    btn.textContent = data.action === 'liked' ? '♥ Liked' : '♡ Like';
+                    btn.style.color = data.action === 'liked' ? '#E11D48' : 'var(--text-main)';
+                }
+            });
+        }
+
+        function loadLikes() {
+            fetch('/api/my_likes').then(r => r.json()).then(data => {
+                const el = document.getElementById('results');
+                el.innerHTML = '';
+                if(data.likes.length === 0) {
+                    el.innerHTML = '<p style="text-align:center; color:#666;">You haven\'t liked any songs yet.</p>';
+                    return;
+                }
+                data.likes.forEach(s => el.appendChild(createSongCard(s, false))); // false = hide the like button on the profile page
+            });
         }
     </script>
 </body>
