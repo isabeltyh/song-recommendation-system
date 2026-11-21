@@ -19,22 +19,18 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="container">
         
-        <!-- Auth Form (Login / Signup) -->
+        <!-- Auth Form -->
         <div id="auth-form" class="card hidden">
             <h2 id="auth-title">Welcome Back</h2>
             <p id="auth-subtitle">Log in to save your favorite songs.</p>
-            
             <label for="auth-username">Username</label>
             <input type="text" id="auth-username" placeholder="Enter username">
-            
             <label for="auth-password">Password</label>
             <input type="password" id="auth-password" placeholder="Enter password">
-            
             <button onclick="handleAuth()" id="auth-submit-btn">Log In</button>
-            <p style="margin-top: 15px; font-size: 0.8rem; cursor: pointer; text-decoration: underline;" onclick="toggleAuthMode()">
+            <p style="margin-top: 20px; font-size: 0.8rem; cursor: pointer; text-decoration: underline; color: var(--text-muted);" onclick="toggleAuthMode()">
                 <span id="auth-toggle-text">Need an account? Sign Up</span>
             </p>
         </div>
@@ -51,16 +47,14 @@
 
         <!-- Search Form -->
         <div id="search-form" class="card hidden">
-            <h2>Search</h2>
+            <h2>Search Library</h2>
             <label for="search-type">Search By</label>
             <select id="search-type" onchange="toggleSearchType()">
                 <option value="artist">Artist</option>
                 <option value="album">Album</option>
             </select>
-            
             <label for="search-query" id="search-label">Artist Name</label>
             <input type="text" id="search-query" placeholder="e.g. Taylor Swift" onkeypress="if(event.key === 'Enter') executeSearch()">
-            
             <button onclick="executeSearch()">Search</button>
         </div>
 
@@ -68,13 +62,13 @@
         <div id="profile-form" class="card hidden">
             <h2>Your Profile</h2>
             <p id="profile-greeting">Welcome!</p>
-            <button onclick="logoutUser()" style="background:transparent; color:var(--text-main); border:1px solid var(--text-main);">Log Out</button>
+            <button onclick="logoutUser()" style="background:transparent; color:var(--accent); border:1px solid var(--accent); margin-bottom: 30px;">Log Out</button>
             
-            <h3 id="results-title" class="hidden" style="margin-top:40px;">Your Liked Songs</h3>
-            <div id="results"></div>
+            <h3 id="results-title" class="hidden" style="margin-top:20px;">Your Liked Songs</h3>
+            <div id="results" class="grid-container"></div>
         </div>
 
-        <!-- Main Results Area (Used by Discover, Similar, Search) -->
+        <!-- Main Results Area -->
         <div id="main-results-container">
             <h3 id="main-results-title" class="hidden">Discover New Music</h3>
             <div id="main-results"></div>
@@ -91,12 +85,9 @@
             loadDiscoverFeed();
         };
 
-        // --- AUTHENTICATION ---
         function checkAuth() {
             fetch('/api/check_auth').then(r => r.json()).then(data => {
-                if (data.logged_in) {
-                    currentUser = data.username;
-                }
+                if (data.logged_in) currentUser = data.username;
             });
         }
 
@@ -124,7 +115,6 @@
                     } else {
                         currentUser = data.username;
                         switchMode('profile');
-                        loadLikes();
                     }
                 } else {
                     alert(data.error);
@@ -139,9 +129,7 @@
             });
         }
 
-        // --- NAVIGATION & UI ---
         function switchMode(mode) {
-            // Hide all forms and results
             document.querySelectorAll('.card').forEach(c => c.classList.add('hidden'));
             document.getElementById('main-results-container').classList.add('hidden');
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -171,26 +159,31 @@
             document.getElementById('search-label').textContent = type === 'artist' ? 'Artist Name' : 'Album Name';
         }
 
-        // --- SONG CARDS ---
         function createSongCard(s, showLikeBtn = true) {
             const div = document.createElement('div');
             div.className = 'song-card';
             
+            // Build Score HTML if it exists
+            const scoreHtml = (s.score !== undefined) ? `<span class="score-badge">Score: ${s.score}</span>` : '';
+            
+            // Build Like Button HTML
             const likeBtnHtml = showLikeBtn ? `
-                <button class="like-btn" onclick="toggleLike('${s.title.replace(/'/g, "\\'")}', '${s.artist.replace(/'/g, "\\'")}', this)" style="width:auto; margin:0; padding:8px 12px; font-size:0.7rem; background:transparent; color:var(--text-main); border:1px solid var(--border-light);">♡ Like</button>
+                <button class="like-btn" onclick="toggleLike('${s.title.replace(/'/g, "\\'")}', '${s.artist.replace(/'/g, "\\'")}', this)">♡ Like</button>
             ` : '';
 
             div.innerHTML = `
                 <div class="song-info">
-                    <h4>${s.title || 'Unknown'}</h4>
-                    <div class="artist">${s.artist || 'Unknown'}</div>
+                    <h4>${s.title || 'Unknown Title'}</h4>
+                    <div class="artist">${s.artist || 'Unknown Artist'}</div>
                 </div>
-                ${likeBtnHtml}
+                <div class="card-actions">
+                    ${likeBtnHtml}
+                    ${scoreHtml}
+                </div>
             `;
             return div;
         }
 
-        // --- FETCHING DATA ---
         function loadDiscoverFeed() {
             fetch('/api/discover').then(r => r.json()).then(data => {
                 const el = document.getElementById('main-results');
@@ -229,12 +222,11 @@
                 el.innerHTML = '';
                 document.getElementById('main-results-title').textContent = `Songs matching "${query}"`;
                 document.getElementById('main-results-title').classList.remove('hidden');
-                if(data.results.length === 0) el.innerHTML = '<p style="text-align:center; color:#666; margin-top:20px;">No results found.</p>';
+                if(data.results.length === 0) el.innerHTML = '<p style="text-align:center; color:#666; grid-column: 1/-1;">No results found.</p>';
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
             });
         }
 
-        // --- LIKES ---
         function toggleLike(title, artist, btn) {
             if (!currentUser) {
                 alert("Please log in to like songs.");
@@ -248,8 +240,13 @@
                 body: JSON.stringify({title: title, artist: artist})
             }).then(r => r.json()).then(data => {
                 if(data.success) {
-                    btn.textContent = data.action === 'liked' ? '♥ Liked' : '♡ Like';
-                    btn.style.color = data.action === 'liked' ? '#E11D48' : 'var(--text-main)';
+                    if(data.action === 'liked') {
+                        btn.innerHTML = '♥ Liked';
+                        btn.classList.add('liked');
+                    } else {
+                        btn.innerHTML = '♡ Like';
+                        btn.classList.remove('liked');
+                    }
                 }
             });
         }
@@ -258,11 +255,12 @@
             fetch('/api/my_likes').then(r => r.json()).then(data => {
                 const el = document.getElementById('results');
                 el.innerHTML = '';
+                document.getElementById('results-title').classList.remove('hidden');
                 if(data.likes.length === 0) {
-                    el.innerHTML = '<p style="text-align:center; color:#666;">You haven\'t liked any songs yet.</p>';
+                    el.innerHTML = '<p style="text-align:center; color:#666; grid-column: 1/-1;">You haven\'t liked any songs yet.</p>';
                     return;
                 }
-                data.likes.forEach(s => el.appendChild(createSongCard(s, false))); // false = hide the like button on the profile page
+                data.likes.forEach(s => el.appendChild(createSongCard(s, false)));
             });
         }
     </script>

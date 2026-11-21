@@ -7,15 +7,16 @@
     box-sizing: border-box;
 }
 
-/* ---------- 2. DESIGN TOKENS ---------- */
+/* ---------- 2. DESIGN TOKENS (Royal Editorial) ---------- */
 :root {
-    --bg-color: #FFFFFF;
+    --bg-color: #F9F8F4;       /* Warm Cream Paper */
     --text-main: #041E3A;      /* Ralph Lauren Navy */
-    --text-muted: #666666;
-    --border-color: #041E3A;
-    --border-light: #E5E5E5;
-    --button-bg: #041E3A;
-    --button-text: #FFFFFF;
+    --text-muted: #6B6B6B;
+    --accent: #8B0000;         /* Deep Burgundy for Highlights */
+    --border-light: #E6E3D8;   /* Subtle warm gray border */
+    --card-bg: #FFFFFF;
+    --shadow: 0 4px 20px rgba(4, 30, 58, 0.05);
+    --shadow-hover: 0 8px 30px rgba(4, 30, 58, 0.12);
 }
 
 /* ---------- 3. PAGE BASE ---------- */
@@ -39,6 +40,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
 }
 
 .nav-brand {
@@ -47,6 +49,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: var(--accent);
 }
 
 .nav-links {
@@ -71,29 +74,33 @@ body {
     margin: 0;
 }
 
-.nav-btn:hover {
+.nav-btn:hover, .nav-btn.active {
     color: var(--text-main);
 }
 
 .nav-btn.active {
-    color: var(--text-main);
-    border-bottom: 2px solid var(--text-main);
+    border-bottom: 2px solid var(--accent);
 }
 
 /* ---------- 5. MAIN CONTAINER ---------- */
 .container {
-    max-width: 800px;
+    max-width: 1200px; /* Wide container for the grid */
     margin: 60px auto;
     padding: 0 20px;
 }
 
 /* ---------- 6. FORMS & CARDS ---------- */
 .card {
-    background: transparent;
-    padding: 0;
+    background: #fff;
+    padding: 40px;
     margin-bottom: 40px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
     text-align: center;
-    animation: fadeIn 0.4s ease;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card h2 {
@@ -102,6 +109,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 10px;
+    color: var(--text-main);
 }
 
 .card p {
@@ -127,32 +135,28 @@ input, select {
     padding: 16px;
     border: 1px solid var(--border-light);
     border-radius: 0;
-    background-color: transparent;
+    background-color: var(--bg-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: var(--text-main);
     transition: border-color 0.3s ease;
 }
 
-input::placeholder {
-    color: #999;
-}
-
 input:focus, select:focus {
     outline: none;
-    border-color: var(--border-color);
+    border-color: var(--text-main);
 }
 
-/* ---------- 7. BUTTON ---------- */
+/* ---------- 7. BUTTONS ---------- */
 button[onclick^="getRecommendations"], 
-button[onclick^="searchByArtist"] {
+button[onclick^="searchByArtist"],
+button[onclick^="handleAuth"] {
     margin-top: 30px;
     width: 100%;
     padding: 18px;
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: 1px solid var(--button-bg);
-    border-radius: 0;
+    background-color: var(--text-main);
+    color: #fff;
+    border: 1px solid var(--text-main);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
@@ -163,66 +167,60 @@ button[onclick^="searchByArtist"] {
 }
 
 button[onclick^="getRecommendations"]:hover, 
-button[onclick^="searchByArtist"]:hover {
-    background-color: transparent;
-    color: var(--button-bg);
+button[onclick^="searchByArtist"]:hover,
+button[onclick^="handleAuth"]:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
 }
 
-/* ---------- 8. MESSAGES ---------- */
-.error {
-    margin-top: 24px;
-    padding: 16px;
-    border: 1px solid #E11D48;
-    color: #E11D48;
-    font-size: 0.85rem;
-    text-align: center;
+/* ---------- 8. GRID RESULTS ---------- */
+#main-results-container {
+    margin-top: 40px;
 }
 
-/* ---------- 9. RESULTS LIST ---------- */
-#results-title {
+#main-results-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--border-light);
-    padding-bottom: 10px;
-    animation: fadeIn 0.4s ease;
+    color: var(--text-main);
 }
 
-#results {
+#main-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 25px;
+}
+
+/* ---------- 9. SONG CARDS ---------- */
+.song-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    animation: fadeIn 0.4s ease;
-}
-
-.song-card {
-    display: flex;
-    align-items: center;
-    padding: 24px 0;
-    border-bottom: 1px solid var(--border-light);
-    transition: all 0.2s ease;
-}
-
-.song-card:last-child {
-    border-bottom: none;
+    justify-content: space-between;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .song-card:hover {
-    padding-left: 10px;
-    border-left: 2px solid var(--border-color);
-}
-
-.song-info {
-    flex: 1;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--text-main);
 }
 
 .song-info h4 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     color: var(--text-main);
+    line-height: 1.2;
 }
 
 .song-info .artist {
@@ -230,67 +228,66 @@ button[onclick^="searchByArtist"]:hover {
     font-size: 0.8rem;
     color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
 }
 
-.score-badge {
-    display: inline-block;
-    margin-top: 12px;
+/* Card Actions (Like button inside the card) */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-light);
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.like-btn {
+    background: transparent;
+    border: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 4px 12px;
-    border: 1px solid var(--text-main);
-    color: var(--text-main);
-    border-radius: 0;
+    transition: color 0.2s;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
-.hidden {
-    display: none;
-}
-
-/* ---------- 10. ANIMATIONS ---------- */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ---------- 11. RESPONSIVE ---------- */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        gap: 15px;
-    }
-    .nav-links {
-        width: 100%;
-        justify-content: space-between;
-    }
-    .nav-btn {
-        font-size: 0.65rem;
-        letter-spacing: 1px;
-    }
-    .container {
-        margin: 40px auto;
-    }
-    .card h2 {
-        font-size: 2rem;
-    }
-}
-
-/* Like Button */
-.like-btn {
-    transition: all 0.2s ease;
-}
 .like-btn:hover {
-    border-color: var(--text-main) !important;
+    color: var(--accent);
 }
 
-/* Profile specific adjustments */
-#profile-form h3 {
-    border-bottom: 1px solid var(--border-light);
-    padding-bottom: 10px;
+.like-btn.liked {
+    color: var(--accent);
+}
+
+.score-badge {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    background: var(--bg-color);
+    color: var(--text-main);
+    border: 1px solid var(--border-light);
+}
+
+.hidden { display: none; }
+
+/* ---------- 10. RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    #main-results { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+    .navbar { flex-direction: column; height: auto; padding: 20px; gap: 15px; }
+    .nav-links { width: 100%; justify-content: space-between; }
+    #main-results { grid-template-columns: 1fr; }
+    .card { padding: 25px; }
 }
