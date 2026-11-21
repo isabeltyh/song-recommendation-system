@@ -3,6 +3,7 @@ Flask web interface for the Song Recommendation System.
 """
 import os
 import random
+import sqlite3
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 from song_recommender import SongRecommender
@@ -32,7 +33,6 @@ def signup():
         
     conn = get_db()
     try:
-        # Hash the password for security
         hashed_pw = generate_password_hash(password)
         conn.execute('INSERT INTO users (username, password) VALUES (?, ?)', (username, hashed_pw))
         conn.commit()
@@ -82,16 +82,13 @@ def like_song():
     artist = data.get('artist')
     
     conn = get_db()
-    # Check if already liked
     existing = conn.execute('SELECT id FROM liked_songs WHERE user_id = ? AND song_title = ? AND song_artist = ?', 
                             (session['user_id'], title, artist)).fetchone()
     
     if existing:
-        # Unlike it
         conn.execute('DELETE FROM liked_songs WHERE id = ?', (existing['id'],))
         action = "unliked"
     else:
-        # Like it
         conn.execute('INSERT INTO liked_songs (user_id, song_title, song_artist) VALUES (?, ?, ?)', 
                      (session['user_id'], title, artist))
         action = "liked"
@@ -150,8 +147,6 @@ def search_artist():
 
 @app.route('/api/search_album', methods=['GET'])
 def search_album():
-    # Note: Since your current database uses artist names as "genres", 
-    # this will search the genre/album field.
     album_query = request.args.get('album', '').strip().lower()
     if not album_query:
         return jsonify({"success": False, "results": []}), 400

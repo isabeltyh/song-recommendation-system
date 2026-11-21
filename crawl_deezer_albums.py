@@ -8,8 +8,21 @@ from collections import deque
 OUTPUT_FILE = "data/songs.json"
 
 # Start with a few diverse seed artists
-SEED_ARTISTS = ["Drake", "Taylor Swift", "Queen", "Daft Punk", "Bob Marley", "Metallica"]
-MAX_ARTISTS_TO_CRAWL = 200 # Lower this if it takes too long, raise it for more data
+SEED_ARTISTS = [
+    
+    # K-Pop (Global groups & soloists)
+    "BTS", "BLACKPINK", "Stray Kids", "TWICE", "SEVENTEEN", "IU", "Jungkook",
+    "NewJeans", "aespa", "LE SSERAFIM", "EXO", "Girls' Generation",
+    
+    # J-Pop (Popular artists & groups)
+    "YOASOBI", "Kenshi Yonezu", "Ado", "Official HIGE DANdism", "LiSA", 
+    "Fujii Kaze", "King Gnu", "Hikaru Utada", "Arashi",
+    
+    # C-Pop (Mandopop/Cantopop)
+    "Jay Chou", "JJ Lin", "G.E.M.", "Hua Chenyu", "Jackson Wang", 
+    "Teresa Teng", "Eason Chan", "Mayday", "Zhou Shen"
+]
+MAX_ARTISTS_TO_CRAWL = 100 # Lower this if it takes too long, raise it for more data
 
 def api_call(url):
     """Helper to make a request to Deezer API."""

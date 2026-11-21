@@ -163,10 +163,8 @@
             const div = document.createElement('div');
             div.className = 'song-card';
             
-            // Build Score HTML if it exists
             const scoreHtml = (s.score !== undefined) ? `<span class="score-badge">Score: ${s.score}</span>` : '';
             
-            // Build Like Button HTML
             const likeBtnHtml = showLikeBtn ? `
                 <button class="like-btn" onclick="toggleLike('${s.title.replace(/'/g, "\\'")}', '${s.artist.replace(/'/g, "\\'")}', this)">♡ Like</button>
             ` : '';
@@ -222,7 +220,18 @@
                 el.innerHTML = '';
                 document.getElementById('main-results-title').textContent = `Songs matching "${query}"`;
                 document.getElementById('main-results-title').classList.remove('hidden');
-                if(data.results.length === 0) el.innerHTML = '<p style="text-align:center; color:#666; grid-column: 1/-1;">No results found.</p>';
+                
+                if(data.results.length === 0) {
+                    el.innerHTML = `
+                        <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px;">
+                            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--text-muted); margin-bottom: 10px;">No matches found</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Try a different spelling or search term.</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // THIS WAS MISSING: Loop through results and add them to the page!
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
             });
         }
@@ -256,10 +265,17 @@
                 const el = document.getElementById('results');
                 el.innerHTML = '';
                 document.getElementById('results-title').classList.remove('hidden');
+                
                 if(data.likes.length === 0) {
-                    el.innerHTML = '<p style="text-align:center; color:#666; grid-column: 1/-1;">You haven\'t liked any songs yet.</p>';
+                    el.innerHTML = `
+                        <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; border: 1px dashed var(--border-light);">
+                            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--text-muted); margin-bottom: 10px;">Your collection is empty</p>
+                            <p style="font-size: 0.85rem; color: var(--text-muted);">Hit the ♡ button on any song to save it here.</p>
+                        </div>
+                    `;
                     return;
                 }
+                
                 data.likes.forEach(s => el.appendChild(createSongCard(s, false)));
             });
         }
