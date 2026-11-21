@@ -9,12 +9,12 @@
 
 /* ---------- 2. DESIGN TOKENS (Dark Royal - Cream Accent) ---------- */
 :root {
-    --bg-color: #041E3A;       /* Deep Ralph Lauren Navy (Background) */
-    --text-main: #F9F8F4;      /* Warm Cream (Text) */
-    --text-muted: #A0AAB5;     /* Soft Slate Gray for secondary text */
-    --accent: #F9F8F4;         /* Soft Cream for highlights */
-    --border-light: #1A365D;   /* Lighter navy for borders */
-    --card-bg: #0A2950;        /* Slightly lighter navy for cards */
+    --bg-color: #041E3A;
+    --text-main: #F9F8F4;
+    --text-muted: #A0AAB5;
+    --accent: #F9F8F4;
+    --border-light: #1A365D;
+    --card-bg: #0A2950;
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
@@ -36,7 +36,7 @@ body {
     padding: 0 40px;
     height: 80px;
     border-bottom: 1px solid var(--border-light);
-    background-color: #03162B; /* Even darker navy for navbar */
+    background-color: #03162B;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -49,7 +49,8 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--accent); /* Cream logo */
+    color: var(--accent);
+    cursor: pointer;
 }
 
 .nav-links {
@@ -151,15 +152,15 @@ input:focus, select:focus {
     border-color: var(--accent);
 }
 
-/* ---------- 7. BUTTONS ---------- */
+/* ---------- 7. BUTTONS (With Hover Pop) ---------- */
 button[onclick^="getRecommendations"], 
 button[onclick^="searchByArtist"],
-button[onclick^="handleAuth"] {
+button[onclick^="handleAuth"],
+#discover-more-btn {
     margin-top: 30px;
-    width: 100%;
-    padding: 18px;
-    background-color: var(--accent); /* Cream button */
-    color: var(--bg-color); /* Navy text on cream button */
+    padding: 18px 40px;
+    background-color: var(--accent);
+    color: var(--bg-color);
     border: 1px solid var(--accent);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
@@ -167,12 +168,16 @@ button[onclick^="handleAuth"] {
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-block;
 }
 
 button[onclick^="getRecommendations"]:hover, 
 button[onclick^="searchByArtist"]:hover,
-button[onclick^="handleAuth"]:hover {
+button[onclick^="handleAuth"]:hover,
+#discover-more-btn:hover {
+    transform: translateY(-3px) scale(1.02); /* The pop effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background-color: transparent;
     color: var(--accent);
 }
@@ -182,7 +187,7 @@ button[onclick^="handleAuth"]:hover {
     margin-top: 40px;
 }
 
-#main-results-title {
+#main-results-title, #results-title {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
     text-transform: uppercase;
@@ -193,7 +198,7 @@ button[onclick^="handleAuth"]:hover {
     color: var(--accent);
 }
 
-#main-results {
+#main-results, #results {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
@@ -286,12 +291,18 @@ button[onclick^="handleAuth"]:hover {
 
 /* ---------- 10. RESPONSIVE ---------- */
 @media (max-width: 900px) {
-    #main-results { grid-template-columns: repeat(2, 1fr); }
+    #main-results, #results { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 600px) {
     .navbar { flex-direction: column; height: auto; padding: 20px; gap: 15px; }
     .nav-links { width: 100%; justify-content: space-between; }
-    #main-results { grid-template-columns: 1fr; }
+    #main-results, #results { grid-template-columns: 1fr; }
     .card { padding: 25px; }
+    button[onclick^="getRecommendations"], 
+    button[onclick^="searchByArtist"],
+    button[onclick^="handleAuth"],
+    #discover-more-btn {
+        width: 100%;
+    }
 }

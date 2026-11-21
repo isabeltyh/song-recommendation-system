@@ -58,7 +58,7 @@
             <button onclick="executeSearch()">Search</button>
         </div>
 
-        <!-- Profile Page -->
+               <!-- Profile Page -->
         <div id="profile-form" class="card hidden">
             <h2>Your Profile</h2>
             <p id="profile-greeting">Welcome!</p>
@@ -66,6 +66,11 @@
             
             <h3 id="results-title" class="hidden" style="margin-top:20px;">Your Liked Songs</h3>
             <div id="results" class="grid-container"></div>
+            
+            <!-- NEW: Discover More Button -->
+            <div style="text-align: center; margin-top: 40px;">
+                <button id="discover-more-btn" onclick="switchMode('discover')">Discover More Songs</button>
+            </div>
         </div>
 
         <!-- Main Results Area -->
