@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 
-/* ---------- 2. DESIGN TOKENS (Dark Royal) ---------- */
+/* ---------- 2. DESIGN TOKENS (Dark Royal - Red Accent) ---------- */
 :root {
     --bg-color: #041E3A;       /* Deep Ralph Lauren Navy (Background) */
     --text-main: #F9F8F4;      /* Warm Cream (Text) */
     --text-muted: #A0AAB5;     /* Soft Slate Gray for secondary text */
-    --accent: #C5A059;         /* Gold accent for highlights */
+    --accent: #A31A1A;         /* Deep Crimson / Burgundy */
     --border-light: #1A365D;   /* Lighter navy for borders */
     --card-bg: #0A2950;        /* Slightly lighter navy for cards */
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -159,7 +159,7 @@ button[onclick^="handleAuth"] {
     width: 100%;
     padding: 18px;
     background-color: var(--accent);
-    color: #041E3A; /* Dark text on gold button */
+    color: #F9F8F4; /* Cream text on red button */
     border: 1px solid var(--accent);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
