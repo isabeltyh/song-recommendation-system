@@ -59,6 +59,30 @@ def login():
     
     return jsonify({"success": False, "error": "Invalid username or password"}), 401
 
+@app.route('/api/reset_password', methods=['POST'])
+def reset_password():
+    data = request.json
+    username = data.get('username')
+    new_password = data.get('new_password')
+    
+    if not username or not new_password:
+        return jsonify({"success": False, "error": "Username and new password required"}), 400
+        
+    conn = get_db()
+    user = conn.execute('SELECT * FROM users WHERE username = ?', (username,)).fetchone()
+    
+    if not user:
+        conn.close()
+        return jsonify({"success": False, "error": "User not found"}), 404
+        
+    # Hash the new password and update it
+    hashed_pw = generate_password_hash(new_password)
+    conn.execute('UPDATE users SET password = ? WHERE id = ?', (hashed_pw, user['id']))
+    conn.commit()
+    conn.close()
+    
+    return jsonify({"success": True, "message": "Password updated successfully"})
+
 @app.route('/api/logout', methods=['POST'])
 def logout():
     session.clear()

@@ -33,6 +33,28 @@
             <p class="auth-toggle" onclick="toggleAuthMode()">
                 <span id="auth-toggle-text">Need an account? Sign Up</span>
             </p>
+             <!-- NEW: Forgot Password Link -->
+            <p class="auth-toggle" onclick="showResetForm()" style="margin-top: 10px;">
+                Forgot Password?
+            </p>
+        </div>
+
+                <!-- Reset Password Form -->
+        <div id="reset-form" class="card hidden">
+            <h2>Reset Password</h2>
+            <p>Enter your username and a new password.</p>
+            
+            <label for="reset-username">Username</label>
+            <input type="text" id="reset-username" placeholder="Enter your username">
+            
+            <label for="reset-password">New Password</label>
+            <input type="password" id="reset-password" placeholder="Enter new password">
+            
+            <button class="btn-primary" onclick="handleResetPassword()">Update Password</button>
+            
+            <p class="auth-toggle" onclick="switchMode('profile')" style="margin-top: 20px;">
+                Back to Login
+            </p>
         </div>
 
         <!-- Recommendation Form -->
@@ -467,6 +489,35 @@
                     }
                 }
             });
+        }
+
+                function showResetForm() {
+            document.getElementById('auth-form').classList.add('hidden');
+            document.getElementById('reset-form').classList.remove('hidden');
+        }
+
+        function handleResetPassword() {
+            const u = document.getElementById('reset-username').value.trim();
+            const p = document.getElementById('reset-password').value.trim();
+
+            if (!u || !p) return alert("Please fill in all fields.");
+
+            fetch('/api/reset_password', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({username: u, new_password: p})
+            }).then(r => r.json()).then(data => {
+                if (data.success) {
+                    alert("Password updated! You can now log in.");
+                    // Clear fields and go back to login
+                    document.getElementById('reset-username').value = '';
+                    document.getElementById('reset-password').value = '';
+                    document.getElementById('reset-form').classList.add('hidden');
+                    document.getElementById('auth-form').classList.remove('hidden');
+                } else {
+                    alert(data.error);
+                }
+            }).catch(err => alert("Error: " + err));
         }
     </script>
 </body>
