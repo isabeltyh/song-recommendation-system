@@ -403,7 +403,7 @@
             });
         }
 
-        function loadLikes() {
+                function loadLikes() {
             fetch('/api/my_likes').then(r => r.json()).then(data => {
                 const el = document.getElementById('results');
                 el.innerHTML = '';
@@ -421,7 +421,51 @@
                     return;
                 }
                 
-                data.likes.forEach(s => el.appendChild(createSongCard(s, false)));
+                // Create cards with a REMOVE button instead of a LIKE button
+                data.likes.forEach(s => {
+                    const card = createSongCard(s, false);
+                    
+                    // Find the actions container and inject the remove button
+                    const actionsContainer = card.querySelector('.card-actions');
+                    if (actionsContainer) {
+                        actionsContainer.innerHTML = `
+                            <button class="like-btn" onclick="removeLike('${s.title.replace(/'/g, "\\'")}', '${s.artist.replace(/'/g, "\\'")}', this)">✕ Remove</button>
+                        `;
+                    }
+                    el.appendChild(card);
+                });
+            });
+        }
+
+                function removeLike(title, artist, btn) {
+            if (!currentUser) return;
+
+            fetch('/api/like', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({title: title, artist: artist})
+            }).then(r => r.json()).then(data => {
+                if(data.success) {
+                    // Remove the card from the UI immediately
+                    const card = btn.closest('.song-card');
+                    if (card) card.remove();
+                    
+                    // Update the stat counter
+                    const statEl = document.getElementById('stat-likes');
+                    let currentCount = parseInt(statEl.textContent) || 0;
+                    if (currentCount > 0) statEl.textContent = currentCount - 1;
+                    
+                    // If no cards left, show the empty state
+                    const resultsEl = document.getElementById('results');
+                    if (resultsEl.children.length === 0) {
+                        resultsEl.innerHTML = `
+                            <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; border: 1px dashed var(--border-light);">
+                                <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; color: var(--text-muted); margin-bottom: 10px;">Your collection is empty</p>
+                                <p style="font-size: 0.85rem; color: var(--text-muted);">Hit the ♡ button on any song to save it here.</p>
+                            </div>
+                        `;
+                    }
+                }
             });
         }
     </script>
