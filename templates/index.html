@@ -52,6 +52,7 @@
             <select id="search-type" onchange="toggleSearchType()">
                 <option value="artist">Artist</option>
                 <option value="album">Album</option>
+                <option value="genre">Genre</option>
             </select>
             <label for="search-query" id="search-label">Artist Name</label>
             <input type="text" id="search-query" placeholder="e.g. Taylor Swift" onkeypress="if(event.key === 'Enter') executeSearch()">
@@ -199,9 +200,18 @@
             else switchMode('discover');
         }
 
-        function toggleSearchType() {
+                function toggleSearchType() {
             const type = document.getElementById('search-type').value;
-            document.getElementById('search-label').textContent = type === 'artist' ? 'Artist Name' : 'Album Name';
+            if (type === 'artist') {
+                document.getElementById('search-label').textContent = 'Artist Name';
+                document.getElementById('search-query').placeholder = 'e.g. Taylor Swift';
+            } else if (type === 'album') {
+                document.getElementById('search-label').textContent = 'Album Name';
+                document.getElementById('search-query').placeholder = 'e.g. 1989';
+            } else {
+                document.getElementById('search-label').textContent = 'Genre Name';
+                document.getElementById('search-query').placeholder = 'e.g. Pop';
+            }
         }
 
         function createSongCard(s, showLikeBtn = true) {
@@ -274,7 +284,7 @@
             }).catch(err => alert("Recommend Error: " + err));
         }
 
-        function executeSearch() {
+                function executeSearch() {
             const type = document.getElementById('search-type').value;
             const query = document.getElementById('search-query').value.trim();
 
@@ -286,7 +296,10 @@
             document.getElementById('refresh-btn').style.display = 'none';
             document.getElementById('back-btn').style.display = 'block';
 
-            const endpoint = type === 'artist' ? '/api/search_artist?artist=' : '/api/search_album?album=';
+            // Determine the correct endpoint
+            let endpoint = '/api/search_artist?artist=';
+            if (type === 'album') endpoint = '/api/search_album?album=';
+            if (type === 'genre') endpoint = '/api/search_genre?genre=';
 
             const el = document.getElementById('main-results');
             el.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">Searching...</p>';
@@ -295,6 +308,7 @@
             
             fetch(endpoint + encodeURIComponent(query)).then(r => r.json()).then(data => {
                 el.innerHTML = '';
+                
                 if(data.results.length === 0) {
                     el.innerHTML = `
                         <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px;">
@@ -304,6 +318,7 @@
                     `;
                     return;
                 }
+                
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
             }).catch(err => alert("Search Error: " + err));
         }
