@@ -7,12 +7,12 @@
     box-sizing: border-box;
 }
 
-/* ---------- 2. DESIGN TOKENS (Dark Royal - Red Accent) ---------- */
+/* ---------- 2. DESIGN TOKENS (Dark Royal - Cream Accent) ---------- */
 :root {
     --bg-color: #041E3A;       /* Deep Ralph Lauren Navy (Background) */
     --text-main: #F9F8F4;      /* Warm Cream (Text) */
     --text-muted: #A0AAB5;     /* Soft Slate Gray for secondary text */
-    --accent: #A31A1A;         /* Deep Crimson / Burgundy */
+    --accent: #F9F8F4;         /* Soft Cream for highlights */
     --border-light: #1A365D;   /* Lighter navy for borders */
     --card-bg: #0A2950;        /* Slightly lighter navy for cards */
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -49,7 +49,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--accent);
+    color: var(--accent); /* Cream logo */
 }
 
 .nav-links {
@@ -75,7 +75,7 @@ body {
 }
 
 .nav-btn:hover, .nav-btn.active {
-    color: var(--text-main);
+    color: var(--accent);
 }
 
 .nav-btn.active {
@@ -109,7 +109,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 10px;
-    color: var(--text-main);
+    color: var(--accent);
 }
 
 .card p {
@@ -158,8 +158,8 @@ button[onclick^="handleAuth"] {
     margin-top: 30px;
     width: 100%;
     padding: 18px;
-    background-color: var(--accent);
-    color: #F9F8F4; /* Cream text on red button */
+    background-color: var(--accent); /* Cream button */
+    color: var(--bg-color); /* Navy text on cream button */
     border: 1px solid var(--accent);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
@@ -190,7 +190,7 @@ button[onclick^="handleAuth"]:hover {
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid var(--border-light);
-    color: var(--text-main);
+    color: var(--accent);
 }
 
 #main-results {
