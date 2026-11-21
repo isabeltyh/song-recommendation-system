@@ -189,37 +189,63 @@
                 document.getElementById('main-results-title').textContent = "Discover New Music";
                 document.getElementById('main-results-title').classList.remove('hidden');
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
-            });
+            }).catch(err => alert("Discover Error: " + err));
         }
 
         function getRecommendations() {
             const title = document.getElementById('song-title').value.trim();
             const count = document.getElementById('count-input').value.trim();
             
+            if(!title) return alert("Please enter a song title!");
+
+            // Show loading state
+            const el = document.getElementById('main-results');
+            el.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">Searching for similar songs...</p>';
+            document.getElementById('main-results-title').classList.remove('hidden');
+            document.getElementById('main-results-title').textContent = "Similar to " + title;
+
+            // Hide the form
+            document.getElementById('recommend-form').classList.add('hidden');
+            document.getElementById('main-results-container').classList.remove('hidden');
+
             fetch('/api/recommend', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({song_title: title, count: count})
             }).then(r => r.json()).then(data => {
-                if(!data.success) return alert(data.error);
-                const el = document.getElementById('main-results');
                 el.innerHTML = '';
-                document.getElementById('main-results-title').textContent = "Similar to " + title;
-                document.getElementById('main-results-title').classList.remove('hidden');
+                if(!data.success) {
+                    el.innerHTML = `<p style="text-align:center; grid-column: 1/-1; color: red;">Error: ${data.error}</p>`;
+                    return;
+                }
+                if(data.results.length === 0) {
+                    el.innerHTML = `<p style="text-align:center; grid-column: 1/-1;">No similar songs found for "${title}".</p>`;
+                    return;
+                }
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
-            });
+            }).catch(err => alert("Recommend Error: " + err));
         }
 
         function executeSearch() {
             const type = document.getElementById('search-type').value;
             const query = document.getElementById('search-query').value.trim();
+
+            if(!query) return alert("Please enter a search term!");
+
             const endpoint = type === 'artist' ? '/api/search_artist?artist=' : '/api/search_album?album=';
+
+            // Show loading state
+            const el = document.getElementById('main-results');
+            el.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">Searching...</p>';
+            document.getElementById('main-results-title').classList.remove('hidden');
+            document.getElementById('main-results-title').textContent = `Results for "${query}"`;
+
+            // Hide the form
+            document.getElementById('search-form').classList.add('hidden');
+            document.getElementById('main-results-container').classList.remove('hidden');
             
             fetch(endpoint + encodeURIComponent(query)).then(r => r.json()).then(data => {
-                const el = document.getElementById('main-results');
                 el.innerHTML = '';
-                document.getElementById('main-results-title').textContent = `Songs matching "${query}"`;
-                document.getElementById('main-results-title').classList.remove('hidden');
                 
                 if(data.results.length === 0) {
                     el.innerHTML = `
@@ -231,9 +257,8 @@
                     return;
                 }
                 
-                // THIS WAS MISSING: Loop through results and add them to the page!
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
-            });
+            }).catch(err => alert("Search Error: " + err));
         }
 
         function toggleLike(title, artist, btn) {
