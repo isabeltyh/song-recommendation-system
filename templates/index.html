@@ -70,7 +70,13 @@
 
         <!-- Main Results Area -->
         <div id="main-results-container">
-            <h3 id="main-results-title" class="hidden">Discover New Music</h3>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 1px solid var(--border-light); padding-bottom: 15px;">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <button id="back-btn" class="nav-btn" onclick="goBack()" style="display: none; border: 1px solid var(--border-light); padding: 8px 16px; color: var(--text-main);">← Back</button>
+                    <h3 id="main-results-title" class="hidden" style="margin: 0; padding: 0; border: none;">Discover New Music</h3>
+                </div>
+                <button id="refresh-btn" class="nav-btn" onclick="loadDiscoverFeed()" style="display: none; border: 1px solid var(--border-light); padding: 8px 16px; color: var(--text-main);">↻ Refresh</button>
+            </div>
             <div id="main-results"></div>
         </div>
 
@@ -79,10 +85,11 @@
     <script>
         let isSignupMode = false;
         let currentUser = null;
+        let previousMode = 'discover';
 
         window.onload = () => {
             checkAuth();
-            loadDiscoverFeed();
+            switchMode('discover');
         };
 
         function checkAuth() {
@@ -130,11 +137,14 @@
         }
 
         function switchMode(mode) {
+            // Hide all cards and results
             document.querySelectorAll('.card').forEach(c => c.classList.add('hidden'));
             document.getElementById('main-results-container').classList.add('hidden');
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             
             document.getElementById('btn-' + mode + '-mode').classList.add('active');
+            document.getElementById('back-btn').style.display = 'none';
+            document.getElementById('refresh-btn').style.display = 'none';
 
             if (mode === 'discover') {
                 document.getElementById('main-results-container').classList.remove('hidden');
@@ -151,6 +161,17 @@
                     document.getElementById('profile-greeting').textContent = "Logged in as " + currentUser;
                     loadLikes();
                 }
+            }
+        }
+
+        function goBack() {
+            // When the back button is clicked, go back to the search/recommend form
+            if (previousMode === 'search') {
+                switchMode('search');
+            } else if (previousMode === 'recommend') {
+                switchMode('recommend');
+            } else {
+                switchMode('discover');
             }
         }
 
@@ -183,13 +204,16 @@
         }
 
         function loadDiscoverFeed() {
+            document.getElementById('refresh-btn').style.display = 'block';
+            document.getElementById('back-btn').style.display = 'none';
+            
             fetch('/api/discover').then(r => r.json()).then(data => {
                 const el = document.getElementById('main-results');
                 el.innerHTML = '';
                 document.getElementById('main-results-title').textContent = "Discover New Music";
                 document.getElementById('main-results-title').classList.remove('hidden');
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
-            }).catch(err => alert("Discover Error: " + err));
+            });
         }
 
         function getRecommendations() {
@@ -198,15 +222,16 @@
             
             if(!title) return alert("Please enter a song title!");
 
-            // Show loading state
+            previousMode = 'recommend';
+            document.getElementById('recommend-form').classList.add('hidden');
+            document.getElementById('main-results-container').classList.remove('hidden');
+            document.getElementById('refresh-btn').style.display = 'none';
+            document.getElementById('back-btn').style.display = 'block';
+
             const el = document.getElementById('main-results');
             el.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">Searching for similar songs...</p>';
             document.getElementById('main-results-title').classList.remove('hidden');
             document.getElementById('main-results-title').textContent = "Similar to " + title;
-
-            // Hide the form
-            document.getElementById('recommend-form').classList.add('hidden');
-            document.getElementById('main-results-container').classList.remove('hidden');
 
             fetch('/api/recommend', {
                 method: 'POST',
@@ -232,17 +257,18 @@
 
             if(!query) return alert("Please enter a search term!");
 
+            previousMode = 'search';
+            document.getElementById('search-form').classList.add('hidden');
+            document.getElementById('main-results-container').classList.remove('hidden');
+            document.getElementById('refresh-btn').style.display = 'none';
+            document.getElementById('back-btn').style.display = 'block';
+
             const endpoint = type === 'artist' ? '/api/search_artist?artist=' : '/api/search_album?album=';
 
-            // Show loading state
             const el = document.getElementById('main-results');
             el.innerHTML = '<p style="text-align:center; grid-column: 1/-1;">Searching...</p>';
             document.getElementById('main-results-title').classList.remove('hidden');
             document.getElementById('main-results-title').textContent = `Results for "${query}"`;
-
-            // Hide the form
-            document.getElementById('search-form').classList.add('hidden');
-            document.getElementById('main-results-container').classList.remove('hidden');
             
             fetch(endpoint + encodeURIComponent(query)).then(r => r.json()).then(data => {
                 el.innerHTML = '';
