@@ -107,6 +107,13 @@
                 <button id="refresh-btn" class="btn-outline" onclick="loadDiscoverFeed()" style="display: none;">↻ Refresh</button>
             </div>
             <div id="main-results"></div>
+
+            <!-- NEW: Pagination Container -->
+            <div id="pagination-container" style="display: none; justify-content: center; align-items: center; gap: 20px; margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--border-light);">
+                <button class="btn-outline" id="prev-page-btn" onclick="changePage(-1)">← Prev</button>
+                <span id="page-info" style="font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: var(--text-muted); letter-spacing: 1px;">Page 1</span>
+                <button class="btn-outline" id="next-page-btn" onclick="changePage(1)">Next →</button>
+            </div>
         </div>
 
     </div>
@@ -115,6 +122,11 @@
         let isSignupMode = false;
         let currentUser = null;
         let previousMode = 'discover';
+
+        // NEW: Pagination State
+        let currentPage = 1;
+        const itemsPerPage = 9; // 3 rows of 3
+        let currentResults = []; // Holds the full list of searched songs
 
         window.onload = () => {
             checkAuth();
@@ -171,9 +183,8 @@
             document.getElementById('main-results-container').classList.add('hidden');
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             
-            document.getElementById('btn-' + mode + '-mode').classList.add('active');
-            document.getElementById('back-btn').style.display = 'none';
-            document.getElementById('refresh-btn').style.display = 'none';
+            // Hide pagination when switching modes
+            document.getElementById('pagination-container').style.display = 'none';
 
             if (mode === 'discover') {
                 document.getElementById('main-results-container').classList.remove('hidden');
@@ -296,7 +307,6 @@
             document.getElementById('refresh-btn').style.display = 'none';
             document.getElementById('back-btn').style.display = 'block';
 
-            // Determine the correct endpoint
             let endpoint = '/api/search_artist?artist=';
             if (type === 'album') endpoint = '/api/search_album?album=';
             if (type === 'genre') endpoint = '/api/search_genre?genre=';
@@ -316,11 +326,57 @@
                             <p style="font-size: 0.85rem; color: var(--text-muted);">Try a different spelling or search term.</p>
                         </div>
                     `;
+                    document.getElementById('pagination-container').style.display = 'none';
                     return;
                 }
                 
-                data.results.forEach(s => el.appendChild(createSongCard(s)));
+                // Store full results and reset page
+                currentResults = data.results;
+                currentPage = 1;
+                renderPage();
             }).catch(err => alert("Search Error: " + err));
+        }
+
+                function renderPage() {
+            const el = document.getElementById('main-results');
+            el.innerHTML = '';
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageItems = currentResults.slice(startIndex, endIndex);
+
+            pageItems.forEach(s => el.appendChild(createSongCard(s)));
+
+            // Update Pagination UI
+            const totalPages = Math.ceil(currentResults.length / itemsPerPage);
+            const paginationEl = document.getElementById('pagination-container');
+            
+            if (totalPages > 1) {
+                paginationEl.style.display = 'flex';
+                document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
+                
+                // Disable buttons if at the start/end
+                document.getElementById('prev-page-btn').disabled = (currentPage === 1);
+                document.getElementById('next-page-btn').disabled = (currentPage === totalPages);
+                
+                // Add visual cue for disabled buttons
+                document.getElementById('prev-page-btn').style.opacity = (currentPage === 1) ? '0.3' : '1';
+                document.getElementById('next-page-btn').style.opacity = (currentPage === totalPages) ? '0.3' : '1';
+            } else {
+                paginationEl.style.display = 'none';
+            }
+        }
+
+        function changePage(direction) {
+            const totalPages = Math.ceil(currentResults.length / itemsPerPage);
+            const newPage = currentPage + direction;
+            
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                renderPage();
+                // Smooth scroll to top of results
+                document.getElementById('main-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         function toggleLike(title, artist, btn) {

@@ -142,33 +142,29 @@ def search_artist():
     artist_query = request.args.get('artist', '').strip().lower()
     if not artist_query:
         return jsonify({"success": False, "results": []}), 400
+    # Removed the [:50] limit here
     matches = [s for s in recommender.songs if artist_query in s["artist"].lower()]
-    return jsonify({"success": True, "results": matches[:50]})
+    return jsonify({"success": True, "results": matches})
 
 @app.route('/api/search_album', methods=['GET'])
 def search_album():
     album_query = request.args.get('album', '').strip().lower()
     if not album_query:
         return jsonify({"success": False, "results": []}), 400
+    # Removed the [:50] limit here
     matches = [s for s in recommender.songs if album_query in s.get("genre", "").lower()]
-    return jsonify({"success": True, "results": matches[:50]})
+    return jsonify({"success": True, "results": matches})
 
 @app.route('/api/search_genre', methods=['GET'])
 def search_genre():
-    # Since the crawler used the artist name as the genre, this will search the genre field.
-    # It looks for songs where the genre matches the query exactly (case-insensitive).
     genre_query = request.args.get('genre', '').strip().lower()
     if not genre_query:
         return jsonify({"success": False, "results": []}), 400
-        
-    # We use exact match for genre to avoid pulling in every artist that contains the letter "a"
     matches = [s for s in recommender.songs if s.get("genre", "").lower() == genre_query]
-    
-    # If exact match fails, fall back to a partial match
     if not matches:
         matches = [s for s in recommender.songs if genre_query in s.get("genre", "").lower()]
-        
-    return jsonify({"success": True, "results": matches[:50]})
+    # Removed the [:50] limit here
+    return jsonify({"success": True, "results": matches})
 
 @app.errorhandler(404)
 def not_found(error):
