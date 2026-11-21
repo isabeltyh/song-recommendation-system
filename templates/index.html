@@ -10,7 +10,7 @@
 
     <!-- Top Navigation Bar -->
     <nav class="navbar">
-        <div class="nav-brand" onclick="switchMode('discover')" style="cursor:pointer;">Song Recommender</div>
+        <div class="nav-brand" onclick="switchMode('discover')">Song Recommender</div>
         <div class="nav-links">
             <button id="btn-discover-mode" class="nav-btn active" onclick="switchMode('discover')">Discover</button>
             <button id="btn-recommend-mode" class="nav-btn" onclick="switchMode('recommend')">Similar</button>
@@ -29,8 +29,8 @@
             <input type="text" id="auth-username" placeholder="Enter username">
             <label for="auth-password">Password</label>
             <input type="password" id="auth-password" placeholder="Enter password">
-            <button onclick="handleAuth()" id="auth-submit-btn">Log In</button>
-            <p style="margin-top: 20px; font-size: 0.8rem; cursor: pointer; text-decoration: underline; color: var(--text-muted);" onclick="toggleAuthMode()">
+            <button class="btn-primary" onclick="handleAuth()" id="auth-submit-btn">Log In</button>
+            <p class="auth-toggle" onclick="toggleAuthMode()">
                 <span id="auth-toggle-text">Need an account? Sign Up</span>
             </p>
         </div>
@@ -42,7 +42,7 @@
             <input type="text" id="song-title" placeholder="e.g. Shape of You">
             <label for="count-input">How many results?</label>
             <input type="text" id="count-input" value="10">
-            <button onclick="getRecommendations()">Recommend</button>
+            <button class="btn-primary" onclick="getRecommendations()">Recommend</button>
         </div>
 
         <!-- Search Form -->
@@ -55,32 +55,55 @@
             </select>
             <label for="search-query" id="search-label">Artist Name</label>
             <input type="text" id="search-query" placeholder="e.g. Taylor Swift" onkeypress="if(event.key === 'Enter') executeSearch()">
-            <button onclick="executeSearch()">Search</button>
+            <button class="btn-primary" onclick="executeSearch()">Search</button>
         </div>
 
-               <!-- Profile Page -->
-        <div id="profile-form" class="card hidden">
-            <h2>Your Profile</h2>
-            <p id="profile-greeting">Welcome!</p>
-            <button onclick="logoutUser()" style="background:transparent; color:var(--accent); border:1px solid var(--accent); margin-bottom: 30px;">Log Out</button>
+        <!-- PROFILE PAGE (Redesigned) -->
+        <div id="profile-form" class="hidden">
             
-            <h3 id="results-title" class="hidden" style="margin-top:20px;">Your Liked Songs</h3>
-            <div id="results" class="grid-container"></div>
-            
-            <!-- NEW: Discover More Button -->
-            <div style="text-align: center; margin-top: 40px;">
-                <button id="discover-more-btn" onclick="switchMode('discover')">Discover More Songs</button>
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="avatar" id="profile-avatar">U</div>
+                <div class="profile-info">
+                    <h2 id="profile-username">Username</h2>
+                    <p>Member since 2024</p>
+                </div>
+                <button class="btn-outline" onclick="logoutUser()">Log Out</button>
             </div>
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-likes">0</div>
+                    <div class="stat-label">Liked Songs</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Discoveries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Curated</div>
+                </div>
+            </div>
+
+            <!-- Liked Songs Section -->
+            <div class="section-header">
+                <h3>Your Liked Songs</h3>
+                <button class="btn-primary" style="width: auto;" onclick="switchMode('discover')">Discover More</button>
+            </div>
+            
+            <div id="results" class="grid-container"></div>
         </div>
 
         <!-- Main Results Area -->
         <div id="main-results-container">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 1px solid var(--border-light); padding-bottom: 15px;">
+            <div class="results-header">
                 <div style="display: flex; align-items: center; gap: 15px;">
-                    <button id="back-btn" class="nav-btn" onclick="goBack()" style="display: none; border: 1px solid var(--border-light); padding: 8px 16px; color: var(--text-main);">← Back</button>
-                    <h3 id="main-results-title" class="hidden" style="margin: 0; padding: 0; border: none;">Discover New Music</h3>
+                    <button id="back-btn" class="btn-outline" onclick="goBack()" style="display: none;">← Back</button>
+                    <h3 id="main-results-title" class="hidden">Discover New Music</h3>
                 </div>
-                <button id="refresh-btn" class="nav-btn" onclick="loadDiscoverFeed()" style="display: none; border: 1px solid var(--border-light); padding: 8px 16px; color: var(--text-main);">↻ Refresh</button>
+                <button id="refresh-btn" class="btn-outline" onclick="loadDiscoverFeed()" style="display: none;">↻ Refresh</button>
             </div>
             <div id="main-results"></div>
         </div>
@@ -142,8 +165,8 @@
         }
 
         function switchMode(mode) {
-            // Hide all cards and results
             document.querySelectorAll('.card').forEach(c => c.classList.add('hidden'));
+            document.getElementById('profile-form').classList.add('hidden');
             document.getElementById('main-results-container').classList.add('hidden');
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             
@@ -163,21 +186,17 @@
                     document.getElementById('auth-form').classList.remove('hidden');
                 } else {
                     document.getElementById('profile-form').classList.remove('hidden');
-                    document.getElementById('profile-greeting').textContent = "Logged in as " + currentUser;
+                    document.getElementById('profile-username').textContent = currentUser;
+                    document.getElementById('profile-avatar').textContent = currentUser.charAt(0).toUpperCase();
                     loadLikes();
                 }
             }
         }
 
         function goBack() {
-            // When the back button is clicked, go back to the search/recommend form
-            if (previousMode === 'search') {
-                switchMode('search');
-            } else if (previousMode === 'recommend') {
-                switchMode('recommend');
-            } else {
-                switchMode('discover');
-            }
+            if (previousMode === 'search') switchMode('search');
+            else if (previousMode === 'recommend') switchMode('recommend');
+            else switchMode('discover');
         }
 
         function toggleSearchType() {
@@ -210,7 +229,6 @@
 
         function loadDiscoverFeed() {
             document.getElementById('refresh-btn').style.display = 'block';
-            document.getElementById('back-btn').style.display = 'none';
             
             fetch('/api/discover').then(r => r.json()).then(data => {
                 const el = document.getElementById('main-results');
@@ -245,7 +263,7 @@
             }).then(r => r.json()).then(data => {
                 el.innerHTML = '';
                 if(!data.success) {
-                    el.innerHTML = `<p style="text-align:center; grid-column: 1/-1; color: red;">Error: ${data.error}</p>`;
+                    el.innerHTML = `<p style="text-align:center; grid-column: 1/-1; color: #ff6b6b;">Error: ${data.error}</p>`;
                     return;
                 }
                 if(data.results.length === 0) {
@@ -277,7 +295,6 @@
             
             fetch(endpoint + encodeURIComponent(query)).then(r => r.json()).then(data => {
                 el.innerHTML = '';
-                
                 if(data.results.length === 0) {
                     el.innerHTML = `
                         <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px;">
@@ -287,7 +304,6 @@
                     `;
                     return;
                 }
-                
                 data.results.forEach(s => el.appendChild(createSongCard(s)));
             }).catch(err => alert("Search Error: " + err));
         }
@@ -320,7 +336,9 @@
             fetch('/api/my_likes').then(r => r.json()).then(data => {
                 const el = document.getElementById('results');
                 el.innerHTML = '';
-                document.getElementById('results-title').classList.remove('hidden');
+                
+                // Update stats
+                document.getElementById('stat-likes').textContent = data.likes.length;
                 
                 if(data.likes.length === 0) {
                     el.innerHTML = `
