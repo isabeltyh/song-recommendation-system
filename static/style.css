@@ -7,16 +7,16 @@
     box-sizing: border-box;
 }
 
-/* ---------- 2. DESIGN TOKENS (Royal Editorial) ---------- */
+/* ---------- 2. DESIGN TOKENS (Dark Royal) ---------- */
 :root {
-    --bg-color: #F9F8F4;       /* Warm Cream Paper */
-    --text-main: #041E3A;      /* Ralph Lauren Navy */
-    --text-muted: #6B6B6B;
-    --accent: #8B0000;         /* Deep Burgundy for Highlights */
-    --border-light: #E6E3D8;   /* Subtle warm gray border */
-    --card-bg: #FFFFFF;
-    --shadow: 0 4px 20px rgba(4, 30, 58, 0.05);
-    --shadow-hover: 0 8px 30px rgba(4, 30, 58, 0.12);
+    --bg-color: #041E3A;       /* Deep Ralph Lauren Navy (Background) */
+    --text-main: #F9F8F4;      /* Warm Cream (Text) */
+    --text-muted: #A0AAB5;     /* Soft Slate Gray for secondary text */
+    --accent: #C5A059;         /* Gold accent for highlights */
+    --border-light: #1A365D;   /* Lighter navy for borders */
+    --card-bg: #0A2950;        /* Slightly lighter navy for cards */
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.5);
 }
 
 /* ---------- 3. PAGE BASE ---------- */
@@ -36,11 +36,11 @@ body {
     padding: 0 40px;
     height: 80px;
     border-bottom: 1px solid var(--border-light);
-    background-color: #fff;
+    background-color: #03162B; /* Even darker navy for navbar */
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
 .nav-brand {
@@ -84,14 +84,14 @@ body {
 
 /* ---------- 5. MAIN CONTAINER ---------- */
 .container {
-    max-width: 1200px; /* Wide container for the grid */
+    max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
 }
 
 /* ---------- 6. FORMS & CARDS ---------- */
 .card {
-    background: #fff;
+    background: var(--card-bg);
     padding: 40px;
     margin-bottom: 40px;
     border: 1px solid var(--border-light);
@@ -135,16 +135,20 @@ input, select {
     padding: 16px;
     border: 1px solid var(--border-light);
     border-radius: 0;
-    background-color: var(--bg-color);
+    background-color: rgba(255, 255, 255, 0.05);
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     color: var(--text-main);
     transition: border-color 0.3s ease;
 }
 
+input::placeholder {
+    color: #68809E;
+}
+
 input:focus, select:focus {
     outline: none;
-    border-color: var(--text-main);
+    border-color: var(--accent);
 }
 
 /* ---------- 7. BUTTONS ---------- */
@@ -154,9 +158,9 @@ button[onclick^="handleAuth"] {
     margin-top: 30px;
     width: 100%;
     padding: 18px;
-    background-color: var(--text-main);
-    color: #fff;
-    border: 1px solid var(--text-main);
+    background-color: var(--accent);
+    color: #041E3A; /* Dark text on gold button */
+    border: 1px solid var(--accent);
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
@@ -169,8 +173,8 @@ button[onclick^="handleAuth"] {
 button[onclick^="getRecommendations"]:hover, 
 button[onclick^="searchByArtist"]:hover,
 button[onclick^="handleAuth"]:hover {
-    background-color: var(--accent);
-    border-color: var(--accent);
+    background-color: transparent;
+    color: var(--accent);
 }
 
 /* ---------- 8. GRID RESULTS ---------- */
@@ -191,7 +195,7 @@ button[onclick^="handleAuth"]:hover {
 
 #main-results {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -211,7 +215,7 @@ button[onclick^="handleAuth"]:hover {
 .song-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--text-main);
+    border-color: var(--accent);
 }
 
 .song-info h4 {
@@ -232,7 +236,7 @@ button[onclick^="handleAuth"]:hover {
     margin-bottom: 20px;
 }
 
-/* Card Actions (Like button inside the card) */
+/* Card Actions */
 .card-actions {
     display: flex;
     justify-content: space-between;
@@ -273,7 +277,7 @@ button[onclick^="handleAuth"]:hover {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 4px 10px;
-    background: var(--bg-color);
+    background: rgba(255, 255, 255, 0.05);
     color: var(--text-main);
     border: 1px solid var(--border-light);
 }
