@@ -36,7 +36,7 @@ body {
 /* ---------- 4. HEADER ---------- */
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-bottom: 30px;
     border-bottom: 1px solid var(--border-light);
 }
@@ -59,13 +59,43 @@ header p {
     color: var(--text-muted);
 }
 
-/* ---------- 5. CARD (Stripped down, no background box) ---------- */
-.card {
-    background: transparent;
-    padding: 0;
+/* ---------- 5. MODE SWITCHER ---------- */
+.mode-switcher {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 20px;
+}
+
+.mode-switcher button {
+    margin-top: 0;
+    width: auto;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border-light);
+}
+
+.mode-switcher button.active {
+    background-color: var(--text-main);
+    color: #fff;
+    border-color: var(--text-main);
+}
+
+.mode-switcher button:hover {
+    background-color: var(--border-light);
+    color: var(--text-main);
 }
 
 /* ---------- 6. FORMS ---------- */
+.card {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
 label {
     display: block;
     font-family: 'Montserrat', sans-serif;
@@ -144,42 +174,57 @@ button:hover {
     text-align: center;
 }
 
-/* ---------- 9. RESULTS ---------- */
-.result {
-    margin-top: 24px;
+/* ---------- 9. TEXT-ONLY SONG LIST ---------- */
+#results {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Using borders instead of gaps for a cleaner list */
+    margin-top: 20px;
+    max-height: 600px; 
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.song-card {
+    display: flex;
+    align-items: center;
     padding: 24px 0;
     border-bottom: 1px solid var(--border-light);
     transition: all 0.2s ease;
 }
 
-.result:last-child {
+.song-card:last-child {
     border-bottom: none;
 }
 
-.result:hover {
+.song-card:hover {
     padding-left: 10px;
     border-left: 2px solid var(--border-color);
 }
 
-.result h4 {
+.song-info {
+    flex: 1;
+}
+
+.song-info h4 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     color: var(--text-main);
 }
 
-.result .meta {
+.song-info .artist {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 12px;
 }
 
-.result .score {
+.score-badge {
     display: inline-block;
+    margin-top: 12px;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
@@ -191,12 +236,19 @@ button:hover {
     border-radius: 0;
 }
 
-.result .why {
-    margin-top: 12px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--text-muted);
+/* Scrollbar styling */
+#results::-webkit-scrollbar {
+    width: 8px;
+}
+#results::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+#results::-webkit-scrollbar-thumb {
+    background: var(--border-light);
+    border-radius: 4px;
+}
+#results::-webkit-scrollbar-thumb:hover {
+    background: var(--text-main);
 }
 
 .hidden {
@@ -207,15 +259,6 @@ button:hover {
 @media (max-width: 600px) {
     body { padding: 40px 16px; }
     header h1 { font-size: 2.5rem; }
-}
-
-/* Beautiful placeholder for missing album art */
-.placeholder-art {
-    background-color: var(--bg-color); /* Ralph Lauren Navy */
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    border: 1px solid var(--border-light);
+    .mode-switcher { flex-direction: column; }
+    .mode-switcher button { width: 100%; }
 }
