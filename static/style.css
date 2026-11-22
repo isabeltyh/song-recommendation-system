@@ -429,6 +429,14 @@ input:focus, select:focus {
     border-radius: 2px;
 }
 
+.duration-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+
 .hidden { display: none; }
 
 /* ---------- 11. RESPONSIVE ---------- */

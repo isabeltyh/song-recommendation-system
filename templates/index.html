@@ -247,7 +247,7 @@
             }
         }
 
-                function createSongCard(s, showLikeBtn = true) {
+                    function createSongCard(s, showLikeBtn = true) {
             const div = document.createElement('div');
             div.className = 'song-card';
             
@@ -257,14 +257,21 @@
                 <button class="like-btn" onclick="toggleLike('${s.title.replace(/'/g, "\\'")}', '${s.artist.replace(/'/g, "\\'")}', this)">♡ Like</button>
             ` : '';
 
-            // Add the genre badge (uses the genre field from the database)
             const genreHtml = s.genre ? `<span class="genre-badge">${s.genre}</span>` : '';
+            
+            // Format duration: 231 -> "3:51"
+            let durationHtml = '';
+            if (s.duration_seconds) {
+                const mins = Math.floor(s.duration_seconds / 60);
+                const secs = String(s.duration_seconds % 60).padStart(2, '0');
+                durationHtml = `<span class="duration-text">${mins}:${secs}</span>`;
+            }
 
             div.innerHTML = `
                 <div class="song-info">
                     ${genreHtml}
                     <h4>${s.title || 'Unknown Title'}</h4>
-                    <div class="artist">${s.artist || 'Unknown Artist'}</div>
+                    <div class="artist">${s.artist || 'Unknown Artist'} ${durationHtml}</div>
                 </div>
                 <div class="card-actions">
                     ${likeBtnHtml}
