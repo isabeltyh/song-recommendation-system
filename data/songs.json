@@ -404498,525 +404498,675 @@
         "title": "The Folks",
         "artist": "Simon & Garfunkel",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/25c3d9c713992211aaab456eac97a3ff/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/25c3d9c713992211aaab456eac97a3ff/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 147,
+        "popularity": 29
     },
     {
         "id": "s50352",
         "title": "Najo eh",
         "artist": "folkshilfe",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/5a173e4f8feb9e99679d75808ac84290/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5a173e4f8feb9e99679d75808ac84290/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 176,
+        "popularity": 24
     },
     {
         "id": "s50353",
         "title": "Le folklore américain (Version stéréo)",
         "artist": "Sheila",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/6026bd1eef0136ca3277cdf58f3e3645/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/6026bd1eef0136ca3277cdf58f3e3645/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 159,
+        "popularity": 26
     },
     {
         "id": "s50354",
         "title": "The Folks Who Live on the Hill",
         "artist": "Joshua Redman",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/aab1db0a8c4156bff5acf76ba757cb22/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/aab1db0a8c4156bff5acf76ba757cb22/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 240,
+        "popularity": 31
     },
     {
         "id": "s50355",
         "title": "Пиленце пее (Pilentse pee)",
         "artist": "Folk Songs Ensemble of the Bulgarian National Radio",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/b221d03b510b46df7004ca77565775ac/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/b221d03b510b46df7004ca77565775ac/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 143,
+        "popularity": 25
     },
     {
         "id": "s50356",
         "title": "Folk Forsvinder",
         "artist": "Chris Burton",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/92f84bbfd76ddeb6804afe2e6c1deea9/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/92f84bbfd76ddeb6804afe2e6c1deea9/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 173,
+        "popularity": 25
     },
     {
         "id": "s50357",
         "title": "Danmarksfilm",
         "artist": "Folkeklubben",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/cdf4210b629edd1b11169e5cfab79c63/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/cdf4210b629edd1b11169e5cfab79c63/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 217,
+        "popularity": 26
     },
     {
         "id": "s50358",
         "title": "Folkmusik",
         "artist": "Peppa Pig Hörspiele",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/2bd92165750f0a712506caaa90dba3fd/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/2bd92165750f0a712506caaa90dba3fd/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 90,
+        "popularity": 20
     },
     {
         "id": "s50359",
         "title": "Folkvangr",
         "artist": "Danheim",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/206f361e218ea7ceadad5855b6d02b36/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/206f361e218ea7ceadad5855b6d02b36/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 241,
+        "popularity": 28
     },
     {
         "id": "s50360",
         "title": "august",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 261,
+        "popularity": 74
     },
     {
         "id": "s50361",
         "title": "Blowin' In the Wind",
         "artist": "Bob Dylan",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/83f505835a6525c9754d6f1f0ab7479d/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/83f505835a6525c9754d6f1f0ab7479d/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 167,
+        "popularity": 72
     },
     {
         "id": "s50362",
         "title": "my tears ricochet",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 255,
+        "popularity": 71
     },
     {
         "id": "s50363",
         "title": "the 1",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 210,
+        "popularity": 60
     },
     {
         "id": "s50364",
         "title": "Too Old to Die Young",
         "artist": "Brother Dege",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/e639e491b7a276007e7c23bbda9eefe5/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/e639e491b7a276007e7c23bbda9eefe5/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 224,
+        "popularity": 53
     },
     {
         "id": "s50365",
         "title": "HAZE (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 431,
+        "popularity": 46
     },
     {
         "id": "s50366",
         "title": "HEAVEN (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 299,
+        "popularity": 46
     },
     {
         "id": "s50367",
         "title": "QUEEN OF DUST (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 494,
+        "popularity": 41
     },
     {
         "id": "s50368",
         "title": "Je t’aimais je t’aime et je t’aimerai",
         "artist": "Nolwenn Leroy",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/878b296802afe6f8da849558daaf82b2/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/878b296802afe6f8da849558daaf82b2/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 396,
+        "popularity": 41
     },
     {
         "id": "s50369",
         "title": "SHE (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 307,
+        "popularity": 41
     },
     {
         "id": "s50370",
         "title": "EYES (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 255,
+        "popularity": 42
     },
     {
         "id": "s50371",
         "title": "So Far Away From L.A",
         "artist": "Nolwenn Leroy",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/878b296802afe6f8da849558daaf82b2/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/878b296802afe6f8da849558daaf82b2/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 229,
+        "popularity": 37
     },
     {
         "id": "s50372",
         "title": "VIRILE (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 415,
+        "popularity": 40
     },
     {
         "id": "s50373",
         "title": "RISE (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 214,
+        "popularity": 40
     },
     {
         "id": "s50374",
         "title": "exile",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 285,
+        "popularity": 80
     },
     {
         "id": "s50375",
         "title": "TERRITORY (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 427,
+        "popularity": 38
     },
     {
         "id": "s50376",
         "title": "Diabolo menthe",
         "artist": "Nolwenn Leroy",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/878b296802afe6f8da849558daaf82b2/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/878b296802afe6f8da849558daaf82b2/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 201,
+        "popularity": 40
     },
     {
         "id": "s50377",
         "title": "cardigan",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 239,
+        "popularity": 82
     },
     {
         "id": "s50378",
         "title": "CLASH (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 224,
+        "popularity": 38
     },
     {
         "id": "s50379",
         "title": "JUVENILE (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 378,
+        "popularity": 34
     },
     {
         "id": "s50380",
         "title": "RUNAWAY (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 280,
+        "popularity": 36
     },
     {
         "id": "s50381",
         "title": "illicit affairs",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 190,
+        "popularity": 63
     },
     {
         "id": "s50382",
         "title": "this is me trying",
         "artist": "Taylor Swift",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/290abe93bdda84bb8b170f30a4998c4c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 195,
+        "popularity": 63
     },
     {
         "id": "s50383",
         "title": "DREAMER (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 358,
+        "popularity": 37
     },
     {
         "id": "s50384",
         "title": "BREATH (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 286,
+        "popularity": 37
     },
     {
         "id": "s50385",
         "title": "SIREN (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 284,
+        "popularity": 36
     },
     {
         "id": "s50386",
         "title": "PLACES (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 220,
+        "popularity": 35
     },
     {
         "id": "s50387",
         "title": "MADLY (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 355,
+        "popularity": 35
     },
     {
         "id": "s50388",
         "title": "BLOOM (Live at The Royal Albert Hall)",
         "artist": "The Blaze",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7767f09956f3efc95bf1e0d62d04cc24/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 187,
+        "popularity": 34
     },
     {
         "id": "s50389",
         "title": "Suzanne",
         "artist": "Leonard Cohen",
         "genre": "Folk",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/bbbb539d7a5275b8c439a38c6f86a1c9/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/bbbb539d7a5275b8c439a38c6f86a1c9/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 227,
+        "popularity": 66
     },
     {
         "id": "s50390",
         "title": "SOUL",
         "artist": "Jeune Lion",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/5dbdf07be4208b0d6d15e138ebfb0c91/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5dbdf07be4208b0d6d15e138ebfb0c91/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 164,
+        "popularity": 66
     },
     {
         "id": "s50391",
         "title": "Nobunaga",
         "artist": "Soul",
         "genre": "Alternative",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/e364f80fae04bf426970a03f959cea6e/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/e364f80fae04bf426970a03f959cea6e/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 156,
+        "popularity": 53
     },
     {
         "id": "s50392",
         "title": "SOUL",
         "artist": "N-XD",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/693ca563b0d3f8ca6cd9b62fe3cfe04d/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/693ca563b0d3f8ca6cd9b62fe3cfe04d/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 174,
+        "popularity": 44
     },
     {
         "id": "s50393",
         "title": "Soul",
         "artist": "Watsebha",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/94e9954671ee0fa2b9ba54e492eeaea7/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/94e9954671ee0fa2b9ba54e492eeaea7/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 156,
+        "popularity": 41
     },
     {
         "id": "s50394",
         "title": "Soul",
         "artist": "Yarden",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/1e53a40e102e5bdbaab49137db2b2b56/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/1e53a40e102e5bdbaab49137db2b2b56/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 178,
+        "popularity": 39
     },
     {
         "id": "s50395",
         "title": "Trop",
         "artist": "Angèle",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/15196a8a1146ca37e56a400e6f824d2c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/15196a8a1146ca37e56a400e6f824d2c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 191,
+        "popularity": 85
     },
     {
         "id": "s50396",
         "title": "Soul",
         "artist": "Lee Brice",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/e5cc206d30bf7b64897438862b60eb1a/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/e5cc206d30bf7b64897438862b60eb1a/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 167,
+        "popularity": 37
     },
     {
         "id": "s50397",
         "title": "Из чёрного мерина",
         "artist": "RAIKAHO",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7714bd18b9ff5482a5a8f7b20cad1d15/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7714bd18b9ff5482a5a8f7b20cad1d15/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 103,
+        "popularity": 28
     },
     {
         "id": "s50398",
         "title": "Soul",
         "artist": "Mari Sarg",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/f7ba61a3b9ecaa5cc9f228412a84515a/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/f7ba61a3b9ecaa5cc9f228412a84515a/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 144,
+        "popularity": 19
     },
     {
         "id": "s50399",
         "title": "Soul",
         "artist": "KhakiKid",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/f48216e62d119927088e1c320387342a/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/f48216e62d119927088e1c320387342a/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 141,
+        "popularity": 34
     },
     {
         "id": "s50400",
         "title": "Soulman",
         "artist": "Ben L'Oncle Soul",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/a66782168dd313dff4b4397c9d045246/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/a66782168dd313dff4b4397c9d045246/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 223,
+        "popularity": 80
     },
     {
         "id": "s50401",
         "title": "Soul",
         "artist": "Moment in Time",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/b8e93e979625a2fd1d9969e6c9192d03/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/b8e93e979625a2fd1d9969e6c9192d03/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 144,
+        "popularity": 35
     },
     {
         "id": "s50402",
         "title": "Crank That (Soulja Boy)",
         "artist": "Soulja Boy Tell'em",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/f2b7c4addb7cb436493db455db8e8fb3/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/f2b7c4addb7cb436493db455db8e8fb3/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 224,
+        "popularity": 80
     },
     {
         "id": "s50403",
         "title": "Soul",
         "artist": "Puggy",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/f7508290178d0ee514fcb30976d1d042/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/f7508290178d0ee514fcb30976d1d042/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 231,
+        "popularity": 26
     },
     {
         "id": "s50404",
         "title": "Soul (R3HAB Remix)",
         "artist": "Lee Brice",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/afee37a3db0c142a0bc6aa138e86874f/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/afee37a3db0c142a0bc6aa138e86874f/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 148,
+        "popularity": 25
     },
     {
         "id": "s50405",
         "title": "soul",
         "artist": "sentir",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/4cbd6e6145d3d7ee984dcbf9cda9e71b/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/4cbd6e6145d3d7ee984dcbf9cda9e71b/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 288,
+        "popularity": 34
     },
     {
         "id": "s50406",
         "title": "Runaway Train (2022 Remaster)",
         "artist": "Soul Asylum",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/518b3872eb41d98ca9c78edf4e55c8f7/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/518b3872eb41d98ca9c78edf4e55c8f7/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 265,
+        "popularity": 79
     },
     {
         "id": "s50407",
         "title": "Prison dorée",
         "artist": "Soul",
         "genre": "Alternative",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/2ae0e64f70f145bca1a62a3690c3d1dc/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/2ae0e64f70f145bca1a62a3690c3d1dc/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 148,
+        "popularity": 24
     },
     {
         "id": "s50408",
         "title": "SOUL",
         "artist": "Kordhell",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/17372f7dd8cf85dfeacfac4f73e43d67/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/17372f7dd8cf85dfeacfac4f73e43d67/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 132,
+        "popularity": 24
     },
     {
         "id": "s50409",
         "title": "Kiss Me Thru The Phone",
         "artist": "Soulja Boy Tell'em",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/65aa844bb82a67272629b58dbc38a8b9/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/65aa844bb82a67272629b58dbc38a8b9/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 193,
+        "popularity": 76
     },
     {
         "id": "s50410",
         "title": "Souls And Stars",
         "artist": "W. Wallace",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/5145e4c1f61546a4cbc115d4d9f04b6d/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5145e4c1f61546a4cbc115d4d9f04b6d/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 136,
+        "popularity": 79
     },
     {
         "id": "s50411",
         "title": "SOUL",
         "artist": "ICXN",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/b294ca24058cdd81afb52436a8c82ad7/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/b294ca24058cdd81afb52436a8c82ad7/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 186,
+        "popularity": 17
     },
     {
         "id": "s50412",
         "title": "Adios",
         "artist": "Soul",
         "genre": "Alternative",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/5faa077998d23df50b6d84950c24a0ce/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/5faa077998d23df50b6d84950c24a0ce/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 178,
+        "popularity": 23
     },
     {
         "id": "s50413",
         "title": "soul",
         "artist": "Roméo",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/7b725d307919fdd093340f0f9af47d4d/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/7b725d307919fdd093340f0f9af47d4d/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 147,
+        "popularity": 26
     },
     {
         "id": "s50414",
         "title": "Soul",
         "artist": "Thomas Jack",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/c9ac5715a83113c82a0cc36f7c4af170/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/c9ac5715a83113c82a0cc36f7c4af170/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 205,
+        "popularity": 19
     },
     {
         "id": "s50415",
         "title": "Soul",
         "artist": "nobody.one",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/16b0b7c7fef99b047a99a433db4cbae6/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/16b0b7c7fef99b047a99a433db4cbae6/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 335,
+        "popularity": 15
     },
     {
         "id": "s50416",
         "title": "Soul",
         "artist": "Matchbox Twenty",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/3a90b7a344caae4f0a479526bc43c527/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/3a90b7a344caae4f0a479526bc43c527/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 274,
+        "popularity": 19
     },
     {
         "id": "s50417",
         "title": "Soul",
         "artist": "LouisG",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/9fe64760fef88bfcd232dd08587b34e5/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/9fe64760fef88bfcd232dd08587b34e5/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 187,
+        "popularity": 24
     },
     {
         "id": "s50418",
         "title": "Soul",
         "artist": "Melly",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/20ee100c13feefeab6086cbd0fca840c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/20ee100c13feefeab6086cbd0fca840c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 129,
+        "popularity": 25
     },
     {
         "id": "s50419",
         "title": "Soul",
         "artist": "Rap Box",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/3d5985864435c744737d08396de8c4ed/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/3d5985864435c744737d08396de8c4ed/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 199,
+        "popularity": 17
     },
     {
         "id": "s50420",
         "title": "Bad Bitch",
         "artist": "Maikel Delacalle",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/cc1a227f4b277f9f4551cb2fe1ca5b17/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/cc1a227f4b277f9f4551cb2fe1ca5b17/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 173,
+        "popularity": 19
     },
     {
         "id": "s50421",
         "title": "Soul On Fire",
         "artist": "Chris Grey",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/e36bdd7de2001568d38a16e5d7c277a4/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/e36bdd7de2001568d38a16e5d7c277a4/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 167,
+        "popularity": 69
     },
     {
         "id": "s50422",
         "title": "Soul",
         "artist": "The Floacist",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/f0ea47cc6be49d211e9ec2c9a8483ea7/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/f0ea47cc6be49d211e9ec2c9a8483ea7/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 173,
+        "popularity": 22
     },
     {
         "id": "s50423",
         "title": "Soul",
         "artist": "ROMCO",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/66c99702258e2d83b05b5724ad91735c/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/66c99702258e2d83b05b5724ad91735c/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 226,
+        "popularity": 12
     },
     {
         "id": "s50424",
         "title": "soul",
         "artist": "Wilee",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/dae1504c64e7849fd8d732123f256242/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/dae1504c64e7849fd8d732123f256242/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 150,
+        "popularity": 17
     },
     {
         "id": "s50425",
         "title": "Soul",
         "artist": "Chetta",
         "genre": "Soul",
-        "cover": "https://cdn-images.dzcdn.net/images/cover/df2e3022d44b9dace678302fa7ed36c6/250x250-000000-80-0-0.jpg"
+        "cover": "https://cdn-images.dzcdn.net/images/cover/df2e3022d44b9dace678302fa7ed36c6/250x250-000000-80-0-0.jpg",
+        "duration_seconds": 226,
+        "popularity": 24
     },
     {
         "id": "s50426",
