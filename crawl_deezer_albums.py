@@ -9,7 +9,11 @@ OUTPUT_FILE = "data/songs.json"
 
 # Start with K-Pop, J-Pop, C-Pop artists + a few Western ones
 SEED_ARTISTS = [
-    "TNT", "TFBOYS"
+    "BTS", "BLACKPINK", "EXO", "TWICE", "NCT", "Red Velvet", "Stray Kids",
+    "ITZY", "ATEEZ", "SEVENTEEN", "GOT7", "MAMAMOO", "MONSTA X", "SHINee", "Super Junior",
+    "Arashi", "King & Prince", "Hey! Say! JUMP", "Nogizaka46", "Sakurazaka46", "Perfume", "LiSA", "YOASOBI",
+    "TFBOYS", "WayV", "Jackson Wang", "Lay Zhang", "TNT", "Jolin Tsai", "Jay Chou", "G.E.M.", "Mayday",
+    "Taylor Swift", "Drake", "The Weeknd", "Ed Sheeran", "Billie Eilish", "Adele", "Bruno Mars", "Coldplay", "Rihanna"
 ]
 MAX_ARTISTS_TO_CRAWL = 100 
 
