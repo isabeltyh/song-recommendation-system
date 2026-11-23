@@ -1,8 +1,9 @@
 import sqlite3
 import os
 
-# Render's filesystem is ephemeral, so we store the DB in the root directory
-DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'users.db')
+# Use an absolute path so it doesn't break on Render
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DB_PATH = os.path.join(BASE_DIR, 'users.db')
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
@@ -20,13 +21,13 @@ def init_db():
             password TEXT NOT NULL
         )
     ''')
-    # Liked songs table
+    # Liked songs table - explicitly tied to user_id
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS liked_songs (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            user_id INTEGER,
-            song_title TEXT,
-            song_artist TEXT,
+            user_id INTEGER NOT NULL,
+            song_title TEXT NOT NULL,
+            song_artist TEXT NOT NULL,
             FOREIGN KEY(user_id) REFERENCES users(id)
         )
     ''')
