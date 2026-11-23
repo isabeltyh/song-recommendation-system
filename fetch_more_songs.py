@@ -8,7 +8,7 @@ OUTPUT_FILE = "data/songs.json"
 
 # A much larger list of artists across different eras and genres
 ARTIST_LIST = [
-    "Taylor Swift", "Drake", "The Weeknd", "Ed Sheeran", "Billie Eilish",
+    "TNT", "TFBOYS", "Taylor Swift", "Drake", "The Weeknd", "Ed Sheeran", "Billie Eilish",
     "Queen", "Eminem", "Adele", "Bruno Mars", "Coldplay", "Rihanna",
     "Kanye West", "Beyoncé", "Kendrick Lamar", "Ariana Grande", "Post Malone",
     "Dua Lipa", "Harry Styles", "Justin Bieber", "Bad Bunny", "BTS",
@@ -19,7 +19,7 @@ ARTIST_LIST = [
     # Add 50-100 more artists here for even more data
 ]
 
-def fetch_artist_top_tracks(artist_name, limit=50):
+def fetch_artist_top_tracks(artist_name, limit=70):
     """Fetch top tracks for a specific artist."""
     tracks = []
     # Use the artist search to get their ID, then get their top tracks
