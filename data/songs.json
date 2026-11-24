@@ -660407,5 +660407,26 @@
         "artist": "Lisandro Aristimuño",
         "genre": "LISA",
         "cover": "https://cdn-images.dzcdn.net/images/cover/0a6b485e3d37ea59af344262fa1e7929/250x250-000000-80-0-0.jpg"
+    },
+    {
+        "id": "s086661",
+        "title": "Poet | Artist",
+        "artist": "SHINee",
+        "genre": "SHINee",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/30393f8b13918ac66fdc44577dfc7874/250x250-000000-80-0-0.jpg"
+    },
+    {
+        "id": "s086662",
+        "title": "Starlight",
+        "artist": "SHINee",
+        "genre": "SHINee",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/30393f8b13918ac66fdc44577dfc7874/250x250-000000-80-0-0.jpg"
+    },
+    {
+        "id": "s086663",
+        "title": "Artistic Groove",
+        "artist": "TAEMIN",
+        "genre": "TAEMIN",
+        "cover": "https://cdn-images.dzcdn.net/images/cover/6bc544fe7c23a5fb79005772e288d44b/250x250-000000-80-0-0.jpg"
     }
 ]

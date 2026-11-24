@@ -9,7 +9,7 @@ OUTPUT_FILE = "data/songs.json"
 
 # Start with K-Pop, J-Pop, C-Pop artists + a few Western ones
 SEED_ARTISTS = [
-    "BTS", "BLACKPINK", "EXO", "TWICE", "NCT", "Red Velvet", "Stray Kids",
+    "BTS", "BLACKPINK", "EXO", "TWICE", "NCT 127", "Red Velvet", "Stray Kids",
     "ITZY", "ATEEZ", "SEVENTEEN", "GOT7", "MAMAMOO", "MONSTA X", "SHINee", "Super Junior",
     "Arashi", "King & Prince", "Hey! Say! JUMP", "Nogizaka46", "Sakurazaka46", "Perfume", "LiSA", "YOASOBI",
     "TFBOYS", "WayV", "Jackson Wang", "Lay Zhang", "TNT", "Jolin Tsai", "Jay Chou", "G.E.M.", "Mayday",

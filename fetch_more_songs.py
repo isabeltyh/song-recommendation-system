@@ -8,7 +8,7 @@ OUTPUT_FILE = "data/songs.json"
 
 # A much larger list of artists across different eras and genres
 ARTIST_LIST = [
-    "NCT","TNT", "TFBOYS", "Taylor Swift", "Drake", "The Weeknd", "Ed Sheeran", "Billie Eilish",
+    "NCT 127","TNT", "TFBOYS", "Taylor Swift", "Drake", "The Weeknd", "Ed Sheeran", "Billie Eilish",
     "Queen", "Eminem", "Adele", "Bruno Mars", "Coldplay", "Rihanna",
     "Kanye West", "Beyoncé", "Kendrick Lamar", "Ariana Grande", "Post Malone",
     "Dua Lipa", "Harry Styles", "Justin Bieber", "Bad Bunny", "BTS",
